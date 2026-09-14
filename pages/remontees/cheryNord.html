@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSF4 Chéry Nord | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/cheryNord.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="chery_intro">
+                        <h1>TSF4 - Le télésiège du Chéry Nord</h1>
+                    </section>
+
+                    <section class="chery_zoneGeneral">
+
+                        <div class="chery_zoneGeneral_intro">
+                            <h2>Les Gets et le versant nord du Mont Chéry</h2>
+                            <p>
+                                Les Gets est un village de Haute-Savoie installé au col du même nom, entre la vallée du Giffre
+                                et la Dranse de Morzine. Son nom vient du patois désignant un couloir de descente du bois,
+                                matériau resté central dans l'architecture des chalets du village. La station de ski naît en
+                                1936 avec l'ouverture de son premier téléski, et s'adresse aujourd'hui encore à une clientèle
+                                attachée au patrimoine et aux paysages traditionnels de montagne. Reliée aux Portes du Soleil,
+                                elle partage son domaine avec Morzine, à l'exception du secteur du Mont Chéry.
+                            </p>
+                            <p>
+                                Le télésiège fixe du Chéry Nord relie le col de l'Encrenaz, accessible en voiture depuis
+                                Essert-Romand, au sommet du Mont Chéry. Il dessert l'intégralité des pistes de ce versant et
+                                permet notamment de remonter après avoir emprunté la piste rouge Marmottes ou les pistes noires
+                                Chevreuil et Mouflon.
+                            </p>
+                        </div>
+
+                        <section class="chery_zoneCarte">
+                            <div class="chery_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège du Chéry Nord
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="chery_zonePresentation">
+
+                            <div class="chery_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image1.png" alt="Vue de la gare aval du télésiège du Chéry Nord">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège du Chéry Nord
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie2">
+
+                                <div class="chery_zonePresentation_partie2_sp1">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        Le versant nord du Mont Chéry bénéficie d'une neige de bonne qualité. Ses pistes noires,
+                                        jamais damées, en font un secteur particulièrement apprécié lorsque la neige est abondante,
+                                        et il reste peu fréquenté comparé au reste du domaine. L'appareil a longtemps manqué de
+                                        repose-skis, un équipement ajouté depuis. Il remplace en partie l'ancien téléski La Côte,
+                                        aujourd'hui démonté, qui empruntait un tracé particulièrement raide sur la piste rouge.
+                                        Le TSF4 du Chéry Nord est désormais la seule remontée mécanique de ce versant.
+                                    </p>
+                                </div>
+
+                                <div class="chery_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="chery_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/fixe/cheryNord/image2.png" alt="Carte de localisation du télésiège du Chéry Nord">
+                                        <figcaption>
+                                            Localisation géographique du télésiège du Chéry Nord
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="chery_zonePresentation_partie2_sp3">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Construit par Skirail en 1986 pour le compte de la SAGETS, le télésiège du Chéry Nord est un
+                                        télésiège à attaches fixes 4 places. Il fonctionne uniquement en saison hivernale, avec une
+                                        capacité de 2000 personnes par heure à une vitesse d'exploitation de 2,3 m/s, pour un temps
+                                        de trajet d'environ 8 minutes et 37 secondes.
+                                    </p>
+                                    <p>
+                                        La ligne développe 1188 mètres pour un dénivelé de 408 mètres, avec une pente moyenne de 37 %
+                                        et une pente maximale de 60 %, répartie sur 16 pylônes. La montée s'effectue par la droite. La
+                                        gare motrice, qui développe une puissance de 309 kW, est installée en aval, où se trouve
+                                        également la tension de l'installation.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="chery_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image3.png" alt="Vue de la gare aval du télésiège du Chéry Nord">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège du Chéry Nord
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie4">
+                                <h2>Ligne</h2>
+                                <p>
+                                    La ligne du Chéry Nord développe 1188 mètres pour un dénivelé de 408 mètres, avec une pente
+                                    moyenne de 37 % et une pente maximale de 60 %. Elle est portée par 16 pylônes.
+                                </p>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image4.png" alt="Image de la zone d'attente, de la zone d'embarquement et du pylône 1 du télésiège">
+                                <figcaption>
+                                    Image de la zone d'attente et du pylône 1 du télésiège
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image5.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image6.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image7.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image8.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image9.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image10.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image11.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image12.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image13.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image14.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image15.png" alt="Image du pylône 12">
+                                <figcaption>
+                                    Image du pylône 12
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image16.png" alt="Image du pylône 13">
+                                <figcaption>
+                                    Image du pylône 13
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image17.png" alt="Enchaînement des pylônes 14 15 et 16">
+                                <figcaption>
+                                    Enchaînement des pylônes 14 15 et 16
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image18.png" alt="Image du pylône 14">
+                                <figcaption>
+                                    Image du pylône 14
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie20">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image19.png" alt="Image du pylône 15">
+                                <figcaption>
+                                    Image du pylône 15
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image20.png" alt="Image du pylône 16">
+                                <figcaption>
+                                    Image du pylône 16
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie22">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont du télésiège du Chéry Nord est de type retour, assurant l'entraînement du câble
+                                    en aval. Le débarquement s'effectue au sommet du Mont Chéry, point de départ des pistes du
+                                    versant nord.
+                                </p>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie23">
+                                <img src="../../images/remontees/telesiege/fixe/cheryNord/image21.png" alt="Vue de la gare amont du télésiège du Chéry Nord">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège du Chéry Nord
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie24">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Construit en 1986 par Skirail, le télésiège du Chéry Nord reste à ce jour la seule remontée
+                                    mécanique du versant nord du Mont Chéry. Il continue de desservir un secteur skié dans des
+                                    conditions naturelles, apprécié pour la qualité de sa neige et sa faible fréquentation.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/cheryNord.js"></script>
+
+</body>
+
+</html>

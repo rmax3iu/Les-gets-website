@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSF2 de la Grande Ourse | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/grandeOurs.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="ourse_intro">
+                        <h1>TSF2 - Le télésiège de la Grande Ourse</h1>
+                    </section>
+
+                    <section class="ourse_zoneGeneral">
+
+                        <div class="ourse_zoneGeneral_intro">
+                            <h2>Les Gets et le versant du Mont Chéry</h2>
+                            <p>
+                                Les Gets est un village de Haute-Savoie installé au col du même nom, entre la vallée du Giffre
+                                et la Dranse de Morzine. Son nom vient du patois désignant un couloir de descente du bois,
+                                matériau resté central dans l'architecture des chalets du village. La station de ski naît en
+                                1936 avec l'ouverture de son premier téléski, et s'adresse aujourd'hui encore à une clientèle
+                                attachée au patrimoine et aux paysages traditionnels de montagne. Reliée aux Portes du Soleil,
+                                elle partage son domaine avec Morzine, à l'exception du secteur du Mont Chéry.
+                            </p>
+                            <p>
+                                Le télésiège de la Grande Ourse est situé sur le versant du Mont Chéry. Il a remplacé un
+                                ancien appareil, probablement un télékabine à enrouleurs ayant également fait office de
+                                télésiège fixe, dont la montée s'effectuait sur le côté.
+                            </p>
+                        </div>
+
+                        <section class="ourse_zoneCarte">
+                            <div class="ourse_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège de la Grande Ourse
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="ourse_zonePresentation">
+
+                            <div class="ourse_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image1.png" alt="Vue de la gare aval du télésiège de la Grande Ourse">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Grande Ourse
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie2">
+
+                                <div class="ourse_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        En 1980, le versant du Mont Chéry connaît une restructuration importante avec la
+                                        construction conjointe de la télécabine 6 places du Mont Chéry et de ce télésiège
+                                        fixe 2 places, avant même la réalisation des autres remontées de ce secteur.
+                                    </p>
+                                </div>
+
+                                <div class="ourse_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="ourse_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/fixe/grandeOurs/image2.png" alt="Carte de localisation du télésiège de la Grande Ourse">
+                                        <figcaption>
+                                            Localisation géographique du télésiège de la Grande Ourse
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="ourse_zonePresentation_partie2_sp3">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        L'intérêt principal de cette remontée est de donner accès au bâtiment situé sur les
+                                        pistes, qui abritait autrefois un musée du ski et accueille aujourd'hui le restaurant
+                                        d'altitude La Grande Ourse. Côté ski, l'appareil dessert le stade de slalom, le
+                                        snowpark, ainsi que trois pistes : Ourson, une piste bleue qui ramène à la gare aval,
+                                        Lièvre, une piste rouge qui redescend jusqu'au télésiège fixe des Planeys, et
+                                        Bouquetin, une piste noire réputée comme la plus difficile de la station, qui plonge
+                                        jusqu'à la gare aval du même appareil.
+                                    </p>
+                                    <p>
+                                        Comparé au téléski de Super Chéry, qui dessert les mêmes pistes, le télésiège de la
+                                        Grande Ourse a une ligne légèrement plus longue, avec une gare aval située un peu
+                                        plus bas.
+                                    </p>
+                                    <p>
+                                        L'été, l'appareil transporte aussi bien des piétons souhaitant se promener ou se
+                                        restaurer que des vététistes, sur des terrains ayant accueilli plusieurs manches de
+                                        coupe du monde ainsi que les championnats du monde de VTT en 2004.
+                                    </p>
+                                </div>
+
+                                <div class="ourse_zonePresentation_partie2_sp4">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Le télésiège de la Grande Ourse est un télésiège à attaches fixes 2 places, construit
+                                        par Montaz Mautino et mis en service en 1980. Il fonctionne aussi bien en hiver qu'en
+                                        été, avec une capacité de 1100 personnes par heure à une vitesse d'exploitation de
+                                        2,3 m/s, pour un temps de trajet d'environ 6 minutes.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1552 mètres d'altitude et la gare amont à 1780 mètres, soit
+                                        un dénivelé de 228 mètres pour une longueur développée de 830 mètres. La pente
+                                        moyenne est de 29 % et la pente maximale atteint 54 %.
+                                    </p>
+                                    <p>
+                                        La montée s'effectue par la gauche. La gare motrice et la tension sont toutes deux
+                                        installées en aval. La ligne compte 9 pylônes et l'installation dispose de 110
+                                        sièges.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image3.png" alt="Vue de la gare aval du télésiège de la Grande Ourse sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Grande Ourse sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie4">
+                                <h2>Ligne</h2>
+                                <p>
+                                    La ligne du télésiège de la Grande Ourse développe 830 mètres pour un dénivelé de 228
+                                    mètres, avec une pente moyenne de 29 % et une pente maximale de 54 %. Elle est portée
+                                    par 9 pylônes.
+                                </p>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image4.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image5.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image6.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image7.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image8.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image9.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image10.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image11.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image12.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie14">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont du télésiège de la Grande Ourse est de type retour, assurant le
+                                    débarquement des skieurs à proximité immédiate du restaurant d'altitude La Grande Ourse
+                                    et du stade de slalom.
+                                </p>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image13.png" alt="Vue de la gare amont du télésiège de la Grande Ourse">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège de la Grande Ourse
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie16">
+                                <h2>Vue depuis les pistes</h2>
+                                <p>
+                                    Depuis les pistes du secteur, la ligne du télésiège de la Grande Ourse offre plusieurs
+                                    points de vue sur son tracé et sur le paysage environnant du Mont Chéry.
+                                </p>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/fixe/grandeOurs/image14.png" alt="Vue de la ligne du télésiège de la Grande Ourse depuis les pistes">
+                                <figcaption>
+                                    Vue de la ligne du télésiège de la Grande Ourse depuis les pistes
+                                </figcaption>
+                            </div>
+
+                            <div class="ourse_zonePresentation_partie18">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Construit par Montaz Mautino en 1980 dans le cadre de la restructuration du versant du
+                                    Mont Chéry, le télésiège de la Grande Ourse reste un appareil clé de ce secteur, à la
+                                    fois pour l'accès aux pistes techniques et au restaurant d'altitude, et pour son usage
+                                    estival au service des piétons et des vététistes.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/grandeOurs.js"></script>
+
+</body>
+</html>

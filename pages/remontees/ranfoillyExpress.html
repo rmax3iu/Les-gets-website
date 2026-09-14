@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSD6 Ranfoilly Express | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../../css/ranfoillyExpress.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="ranfoilly_intro">
+                        <h1>TSD6 - Le télésiège du Ranfoilly Express</h1>
+                    </section>
+
+                    <section class="ranfoilly_zoneGeneral">
+                        <div class="ranfoilly_zoneGeneral_intro">
+
+                            <h2>Les Gets et le secteur des Chavannes</h2>
+                            <p>
+                                Située en Haute-Savoie au cœur du domaine des Portes du Soleil, la station des Gets conserve son identité de village de montagne tout en proposant un vaste domaine skiable moderne. Reliée aux autres stations françaises et suisses des Portes du Soleil, elle offre un terrain de jeu varié évoluant entre le Léman et le Mont-Blanc.
+                            </p>
+                            <p>
+                                Le télésiège débrayable du Ranfoilly Express est implanté sur le versant des Chavannes, plus précisément sur le secteur Ranfoilly-Rosta. Depuis le front de neige des Chavannes, il est accessible en empruntant le télésiège des Chavannes puis la piste Violette. Il dessert de nombreuses pistes rouges et bleues et permet également de rejoindre le secteur morzinois de Chamossière.
+                            </p>
+                            <p>
+                                Mis en service en décembre 2017, le Ranfoilly Express constitue aujourd'hui l'une des remontées mécaniques les plus importantes du domaine skiable des Gets grâce à sa grande capacité et à son rôle majeur dans la circulation des skieurs.
+                            </p>
+                        </div>
+
+                        <section class="ranfoilly_zoneCarte">
+                            <div class="ranfoilly_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège du Ranfoilly Express
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="ranfoilly_zonePresentation">
+                            <div class="ranfoilly_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image1.png" alt="Vue de la gare aval du Ranfoilly Express">
+                                <figcaption>
+                                    Vue de la gare aval du Ranfoilly Express
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie2">
+                                <div class="ranfoilly_zonePresentation_partie2_sp1">
+                                    <h2>Historique du secteur</h2>
+                                    <p>
+                                        Le premier télésiège du Ranfoilly est construit en 1972 par Montaz Mautino sous la forme d'un télésiège biplace. Au fil du développement du domaine skiable, plusieurs remontées viennent compléter le secteur avec notamment les télésièges de la Rosta et de la Mouille aux Chats. En 1986, le premier appareil est remplacé par un télésiège débrayable 4 places, premier de ce type aux Gets. Après la modernisation du secteur en 2002 avec les télésièges des Nauchets et des Grains d'Or, une nouvelle étape est franchie en 2017 avec la construction du Ranfoilly Express actuel, tandis que le télésiège de la Mouille aux Chats est démonté afin de libérer l'espace nécessaire en gare aval.
+                                    </p>
+                                </div>
+
+                                <div class="ranfoilly_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="ranfoilly_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image2.png" alt="Carte de localisation">
+
+                                        <figcaption>
+                                            Localisation géographique du télésiège du Ranfoilly Express
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="ranfoilly_zonePresentation_partie2_sp3">
+                                    <h2>La construction</h2>
+                                    <p>
+                                        Les travaux débutent à la fin du mois de juin 2017 par le démontage de l'ancien télésiège quatre places. Durant l'été, les massifs des pylônes sont réalisés avant le démontage du télésiège de la Mouille aux Chats en septembre. Les gares sont ensuite montées puis l'ensemble des pylônes est héliporté le 4 octobre. Le câble est déroulé et épissuré à la fin du mois d'octobre tandis que le garage des sièges est construit au début du mois de novembre. Après plusieurs semaines d'essais, l'installation est ouverte au public le 23 décembre 2017.
+                                    </p>
+
+                                    <!-- La construction -->
+                                    <div class="ranfoilly_zonePresentation_partie2_sp3_sp1">
+                                        <div class="ranfoilly_zonePresentation_partie2_sp3_image">
+
+                                            <div class="ranfoilly_zonePresentation_partie2_sp3_sp1_sp1" id="fleche_gauche">
+                                                <img src="../../images/icone/fleche/fleche1_droite_sf.png" alt="Flèche gauche">
+                                            </div>
+
+                                            <div class="ranfoilly_zonePresentation_partie2_sp3_sp1_sp2">
+                                                <img id="carousel_image" src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/construction/image1.png" alt="Dépose de l'ancien télésiège 4 places">
+                                            </div>
+
+                                            <div class="ranfoilly_zonePresentation_partie2_sp3_sp1_sp3" id="fleche_droite">
+                                                <img src="../../images/icone/fleche/fleche1_gauche_sf.png" alt="Flèche droite">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="ranfoilly_zonePresentation_partie2_sp3_description" id="carousel_description">
+                                            Dépose de l'ancien télésiège 4 places
+                                        </div>
+                                    </div>
+
+
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Construit par Leitner pour la SAGETS, le Ranfoilly Express est un télésiège débrayable 6 places mis en service le 23 décembre 2017. Long de 1 762 mètres pour un dénivelé de 421 mètres, il est exploité à une vitesse de 6 m/s et peut transporter jusqu'à 3 300 personnes par heure. L'installation est équipée d'un moteur Direct Drive, d'un tapis de positionnement Chairkit, d'une tension hydraulique en gare aval ainsi que de 98 sièges LPA6 équipés de garde-corps sécurisés.
+                                    </p>
+
+                                    <h2>La gare aval</h2>
+                                    <p>
+                                        La gare aval est implantée aux Creux des Nauchets, au cœur du principal pôle de remontées mécaniques du secteur Ranfoilly-Rosta. De type retour-tension, elle est directement reliée à un important garage à sièges permettant de stocker les deux tiers des véhicules, tandis que le dernier tiers est stationné dans les voies de la gare. Le bâtiment accueille également le poste de commande, une station de pompage destinée à l'enneigement mécanique ainsi que des sanitaires publics. Grâce à son tapis d'embarquement Chairkit, à son contour tronqué et à ses trois modes d'exploitation permettant d'adapter le débit selon l'affluence, cette gare constitue l'un des équipements les plus modernes du domaine skiable des Gets.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image3.png" alt="Image du garage pour les sièges avec le rail d'accès au garage">
+                                <figcaption>
+                                    Image du garage pour les sièges avec le rail d'accès au garage
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie4">
+                                <h2>Ligne</h2>
+                                <p>
+                                    La ligne, d’une longueur de 1762 mètres, est supportée par 14 pylônes tubulaires. Elle gravit les 421.10 mètres de dénivelée 
+                                    pour atteindre les 1812 mètres d’altitude. Le profil de la ligne a une pente relativement régulière avec une pente maximale 
+                                    de seulement 47.4% . Le multipaire est entièrement enterré et relié à un coffret au pied de chaque pylône. Entre le pylône 
+                                    11 et la gare amont, un câble muni de dispositifs anti-collision pour l'avifaune est installé.
+                                </p>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image5.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image6.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image7.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image8.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image9.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image10.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image11.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image12.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image13.png" alt="Image du pylône 9 équipé d'un anémomètre">
+                                <figcaption>
+                                    Image du pylône 9 équipé d'un anémomètre
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image14.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image15.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image16.png" alt="Image du pylône 12">
+                                <figcaption>
+                                    Image du pylône 12
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image17.png" alt="Image du pylône 13">
+                                <figcaption>
+                                    Image du pylône 13
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image18.png" alt="Image du pylône 14">
+                                <figcaption>
+                                    Image du pylône 14
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie20">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image19.png" alt="Image de l'arrivée en gare amont">
+                                <figcaption>
+                                    Image de l'arrivée en gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie21">
+                                <h2>La gare amont</h2>
+                                <p>
+                                    La gare amont est située à 1812 mètres d’altitude et se trouve au Ranfoilly, à proximité de la Tête du Vuargne. 
+                                    C'est dans cette gare qu'est située la motorisation du télésiège assurée par un moteur Direct Drive. Le débarquement 
+                                    se fait dans le sens de la ligne. Une voie de garage pour le véhicule de service est située en face du local de commande, 
+                                    local qui abrite les armoires électriques mais aussi un poste de secours.
+                                </p>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie22">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image20.png" alt="Image de la gare amont vue de trois quart">
+                                <figcaption>
+                                    Image de la gare amont vue de trois quart
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie23">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image21.png" alt="Image de la gare amont vue de derrière">
+                                <figcaption>
+                                    Image de la gare amont vue de derrière
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie24">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image22.png" alt="Image du pylône 14 et de la gare amont">
+                                <figcaption>
+                                    Image du pylône 14 et de la gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie25">
+                                <h2>Photos diverses</h2>
+                                <p>
+                                    Cette section regroupe différentes photographies du télésiège Ranfoilly Express,
+                                    notamment des détails des sièges, des éléments de la ligne ainsi que plusieurs vues
+                                    permettant d'observer les différentes infrastructures de la remontée mécanique.
+                                </p>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie26">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image23.png" alt="Image d'un siège LPA6 OCC-SB-F6">
+                                <figcaption>
+                                    Image d'un siège LPA6 OCC-SB-F6
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie27">
+                                <img src="../../images/remontees/telesiege/debrayable/ranfoillyExpress/image24.png" alt="Image du télésiège avec une mer de brouillard en fond">
+                                <figcaption>
+                                    Image du télésiège avec une mer de brouillard en fond
+                                </figcaption>
+                            </div>
+
+                            <div class="ranfoilly_zonePresentation_partie28">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Inauguré en 2017, le Ranfoilly Express s'est rapidement imposé comme un équipement incontournable du domaine skiable des Gets. Grâce à son débit performant, son confort moderne et sa liaison stratégique vers le secteur de Chamossière, ce télésiège garantit une fluidité optimale au cœur du secteur Ranfoilly-Rosta.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/ranfoillyExpress.js"></script>
+
+</body>
+</html>

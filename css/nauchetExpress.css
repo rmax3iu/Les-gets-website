@@ -1,0 +1,240 @@
+/* ################################################################################################################################################## */
+/* ############################################# - Page sur le télésiège Nauchets Express - ######################################################## */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.nauchet_intro
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.nauchet_intro h1
+{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+}
+
+/* ################################################################################################# */
+/* ###################################### - Conteneurs généraux - ################################## */
+/* ################################################################################################# */
+
+.nauchet_zonePresentation
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.nauchet_zoneGeneral_intro,
+.nauchet_zonePresentation_partie2,
+.nauchet_zonePresentation_partie6,
+.nauchet_zonePresentation_partie17,
+.nauchet_zonePresentation_partie20,
+.nauchet_zonePresentation_partie23
+{
+    display:flex;
+    flex-direction:column;
+    background-color:#dee4ef;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 100px 0;
+    text-align:justify;
+}
+
+.nauchet_zoneGeneral_intro h2,
+.nauchet_zonePresentation_partie2 h2,
+.nauchet_zonePresentation_partie6 h2,
+.nauchet_zonePresentation_partie17 h2,
+.nauchet_zonePresentation_partie20 h2,
+.nauchet_zonePresentation_partie23 h2
+{
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.nauchet_zoneGeneral_intro p,
+.nauchet_zonePresentation_partie2 p,
+.nauchet_zonePresentation_partie6 p,
+.nauchet_zonePresentation_partie17 p,
+.nauchet_zonePresentation_partie20 p,
+.nauchet_zonePresentation_partie23 p
+{
+    margin-top:-1px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur carte interactive - ######################### */
+/* ################################################################################################# */
+
+
+.nauchet_zoneCarte
+{
+    display:flex;
+    justify-content:center;
+    margin: 41px;
+}
+
+.nauchet_carte
+{
+    width:80%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#map
+{
+    width:100%;
+    height:500px;
+    border-radius:20px 20px 0 0;
+}
+
+.nauchet_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+/* ################################################################################################# */
+/* ################################ - Carte localisation géographique - ############################ */
+/* ################################################################################################# */
+
+.nauchet_zonePresentation_partie2_sp2_sp2
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-self:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+    width:58%;
+}
+
+.nauchet_zonePresentation_partie2_sp2
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.nauchet_zonePresentation_partie2_sp2_sp2 img
+{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+
+.nauchet_zonePresentation_partie2_sp2_sp2 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Blocs images - ####################################### */
+/* ################################################################################################# */
+
+.nauchet_zonePresentation_partie1,
+.nauchet_zonePresentation_partie3,
+.nauchet_zonePresentation_partie4,
+.nauchet_zonePresentation_partie5,
+.nauchet_zonePresentation_partie7,
+.nauchet_zonePresentation_partie8,
+.nauchet_zonePresentation_partie9,
+.nauchet_zonePresentation_partie10,
+.nauchet_zonePresentation_partie11,
+.nauchet_zonePresentation_partie12,
+.nauchet_zonePresentation_partie13,
+.nauchet_zonePresentation_partie14,
+.nauchet_zonePresentation_partie15,
+.nauchet_zonePresentation_partie16,
+.nauchet_zonePresentation_partie18,
+.nauchet_zonePresentation_partie19,
+.nauchet_zonePresentation_partie21,
+.nauchet_zonePresentation_partie22
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+}
+
+.nauchet_zonePresentation_partie1 img,
+.nauchet_zonePresentation_partie3 img,
+.nauchet_zonePresentation_partie4 img,
+.nauchet_zonePresentation_partie5 img,
+.nauchet_zonePresentation_partie7 img,
+.nauchet_zonePresentation_partie8 img,
+.nauchet_zonePresentation_partie9 img,
+.nauchet_zonePresentation_partie10 img,
+.nauchet_zonePresentation_partie11 img,
+.nauchet_zonePresentation_partie12 img,
+.nauchet_zonePresentation_partie13 img,
+.nauchet_zonePresentation_partie14 img,
+.nauchet_zonePresentation_partie15 img,
+.nauchet_zonePresentation_partie16 img,
+.nauchet_zonePresentation_partie18 img,
+.nauchet_zonePresentation_partie19 img,
+.nauchet_zonePresentation_partie21 img,
+.nauchet_zonePresentation_partie22 img
+{
+    border-radius:20px 20px 0 0;
+}
+
+
+
+.nauchet_zonePresentation_partie1 figcaption,
+.nauchet_zonePresentation_partie3 figcaption,
+.nauchet_zonePresentation_partie4 figcaption,
+.nauchet_zonePresentation_partie5 figcaption,
+.nauchet_zonePresentation_partie7 figcaption,
+.nauchet_zonePresentation_partie8 figcaption,
+.nauchet_zonePresentation_partie9 figcaption,
+.nauchet_zonePresentation_partie10 figcaption,
+.nauchet_zonePresentation_partie11 figcaption,
+.nauchet_zonePresentation_partie12 figcaption,
+.nauchet_zonePresentation_partie13 figcaption,
+.nauchet_zonePresentation_partie14 figcaption,
+.nauchet_zonePresentation_partie15 figcaption,
+.nauchet_zonePresentation_partie16 figcaption,
+.nauchet_zonePresentation_partie18 figcaption,
+.nauchet_zonePresentation_partie19 figcaption,
+.nauchet_zonePresentation_partie21 figcaption,
+.nauchet_zonePresentation_partie22 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Conclusion - ######################################### */
+/* ################################################################################################# */
+
+.nauchet_zonePresentation_partie23
+{
+    margin-bottom:30px;
+}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+/* ################################################################################################# */

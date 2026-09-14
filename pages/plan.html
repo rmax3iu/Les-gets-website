@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anciens plans du domaine skiable | Les Gets</title>
+
+    <link rel="icon" href="../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../index.html">
+                        <img class="page0_nav1_img1" src="../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <!-- Menu de navigation avec icônes -->
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="geographie.html">
+                                <img class="page0_ul_li_img" src="../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="plan.html">
+                                <img class="page0_ul_li_img" src="../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees/remontees.html">
+                                <img class="page0_ul_li_img" src="../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="meteo.html">
+                                <img class="page0_ul_li_img" src="../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="webcam.html">
+                                <img class="page0_ul_li_img" src="../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="plan_intro">
+                        <h1>Les anciens plans du domaine skiable</h1>
+                        <p>
+                            Retrouvez l'évolution du plan des pistes des Gets au fil des saisons.
+                            Choisissez une année pour afficher le plan correspondant.
+                        </p>
+                    </section>
+
+                    <section class="plan_selecteur">
+                        <label for="plan_annee">Choisissez une année :&nbsp;</label>
+                        <select id="plan_annee">
+                            <option value="">Sélectionner une année</option>
+                            <option value="2025-2026">2025 - 2026</option>
+                            <option value="2024-2025">2024 - 2025</option>
+                            <option value="2023-2024">2023 - 2024</option>
+                            <option value="2020-2021">2020 - 2021</option>
+                            <option value="2019-2020">2019 - 2020</option>
+                            <option value="2017-2018">2017 - 2018</option>
+                            <option value="2016-2017">2016 - 2017</option>
+                            <option value="2015-2016">2015 - 2016</option>
+                            <option value="2013-2014">2013 - 2014</option>
+                            <option value="2012-2013">2012 - 2013</option>
+                            <option value="2011-2012">2011 - 2012</option>
+                            <option value="2010-2011">2010 - 2011</option>
+                            <option value="2007-2008">2007 - 2008</option>
+                        </select>
+                    </section>
+
+                    <p id="annee_affichee"></p>
+
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="../js/plan.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSD6 Perrières Express | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/perriereExpress.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="perrieres_intro">
+                        <h1>TSD6 - Le télésiège des Perrières Express</h1>
+                    </section>
+
+                    <section class="perrieres_zoneGeneral">
+
+                        <div class="perrieres_zoneGeneral_intro">
+                            <h2>Les Gets et le secteur sud</h2>
+                            <p>
+                                Les Gets est une station du domaine skiable des Portes du Soleil, en Haute-Savoie, qui
+                                propose du ski depuis la fin des années 1930 avec la construction du téléski Boule de
+                                Gomme en 1936. Le domaine s'étend aujourd'hui de part et d'autre du village, entre 1100
+                                et 1800 mètres d'altitude. D'un côté se trouve le secteur isolé et peu fréquenté du Mont
+                                Chéry ; de l'autre, les secteurs des Chavannes et des Perrières, qui permettent de
+                                rejoindre Morzine et le reste des Portes du Soleil.
+                            </p>
+                        </div>
+
+                        <section class="perrieres_zoneCarte">
+                            <div class="perrieres_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège des Perrières Express
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="perrieres_zonePresentation">
+
+                            <div class="perrieres_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image1.png" alt="Vue de la gare d'arrivée du télésiège des Perrières Express">
+                                <figcaption>
+                                    Vue de la gare d'arrivée du télésiège des Perrières Express
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie2">
+
+                                <div class="perrieres_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Le télésiège des Perrières a été construit au début des années 2000, dans le
+                                        cadre d'une vaste modernisation des secteurs de Ranfoilly, Rosta et Chavannes.
+                                        Il permet aux skieurs de rejoindre directement ces domaines depuis le bord des
+                                        Gets. La liaison était déjà possible auparavant grâce aux téléskis du Château
+                                        et de la Turche, mais leur vitesse et leur confort limités expliquaient la
+                                        faible fréquentation de cette chaîne de téléskis.
+                                    </p>
+                                </div>
+
+                                <div class="perrieres_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="perrieres_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image2.png" alt="Carte de localisation du télésiège des Perrières Express">
+                                        <figcaption>
+                                            Localisation géographique du télésiège des Perrières Express
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="perrieres_zonePresentation_partie2_sp3">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Le télésiège des Perrières Express est un télésiège débrayable 6 places,
+                                        construit par Poma et mis en service en 2003. Il offre une capacité de 2400
+                                        personnes par heure à une vitesse d'exploitation de 5 m/s.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1143 mètres d'altitude et la gare amont à 1537 mètres,
+                                        pour une longueur de ligne de 1685 mètres et une pente maximale de 55,07 %.
+                                    </p>
+                                    <p>
+                                        La motorisation est installée en gare amont, tandis que la tension du câble est
+                                        assurée en aval. La montée s'effectue par la droite. La ligne compte 17
+                                        pylônes, et l'installation dispose de 78 sièges Doudouk 6.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image3.png" alt="Vue de la gare de départ du télésiège des Perrières Express">
+                                <figcaption>
+                                    Vue de la gare de départ du télésiège des Perrières Express
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie4">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image4.png" alt="Vue de la gare de départ sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare de départ sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image5.png" alt="Vue depuis l'accélérateur du télésiège des Perrières Express">
+                                <figcaption>
+                                    Vue depuis l'accélérateur
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image6.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image7.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image8.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image9.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image10.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image11.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image12.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image13.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image14.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image15.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image16.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image17.png" alt="Image du pylône 12">
+                                <figcaption>
+                                    Image du pylône 12
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image18.png" alt="Image du pylône 13">
+                                <figcaption>
+                                    Image du pylône 13
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image19.png" alt="Image du pylône 14">
+                                <figcaption>
+                                    Image du pylône 14
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie20">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image20.png" alt="Image du pylône 15">
+                                <figcaption>
+                                    Image du pylône 15
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image21.png" alt="Image du pylône 16">
+                                <figcaption>
+                                    Image du pylône 16
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie22">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image22.png" alt="Image du pylône 17">
+                                <figcaption>
+                                    Image du pylône 17
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie23">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont est située à proximité de la piste Renardière, permettant un accès
+                                    direct aux télésièges des Nauchets, du Ranfoilly et de la Rosta, ou une descente
+                                    jusqu'au pied des Perrières. La sortie se situe dans le contour de la gare, comme
+                                    l'entrée en gare aval.
+                                </p>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie24">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image23.png" alt="Vue de la gare d'arrivée du télésiège des Perrières Express">
+                                <figcaption>
+                                    Vue de la gare d'arrivée du télésiège des Perrières Express
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie25">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image24.png" alt="Vue de la gare d'arrivée sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare d'arrivée sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie26">
+                                <h2>Sièges et pinces</h2>
+                                <p>
+                                    Le télésiège des Perrières est équipé de 78 sièges Doudouk 6, construits par Poma,
+                                    pouvant chacun accueillir six personnes. Les sièges sont reliés au câble par une
+                                    pince débrayable Omega T, et chaque place dispose d'un dispositif anti-sous-marinage.
+                                </p>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie27">
+                                <img src="../../images/remontees/telesiege/debrayable/perriereExpress/image25.png" alt="Siège du télésiège des Perrières Express en gare">
+                                <figcaption>
+                                    Siège du télésiège des Perrières Express en gare
+                                </figcaption>
+                            </div>
+
+                            <div class="perrieres_zonePresentation_partie28">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Depuis sa construction en 2003, le télésiège des Perrières Express est devenu
+                                    indispensable à la partie la plus méridionale des Gets. Il a fini par remplacer
+                                    presque entièrement le téléski du Château, désormais conservé uniquement comme
+                                    solution de secours, et reste ouvert même en cas de conditions d'enneigement
+                                    difficiles.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/perriereExpress.js"></script>
+
+</body>
+</html>

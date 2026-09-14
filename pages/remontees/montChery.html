@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TCD6 du Mont Chéry | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/montChery.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="chery_intro">
+                        <h1>TCD6 - La télécabine du Mont Chéry</h1>
+                    </section>
+
+                    <section class="chery_zoneGeneral">
+
+                        <div class="chery_zoneGeneral_intro">
+                            <h2>Les Gets et le secteur du Mont Chéry</h2>
+                            <p>
+                                Les Gets est un village de Haute-Savoie installé au col du même nom, entre la vallée du
+                                Giffre et la Dranse de Morzine. Son nom vient du patois désignant un couloir de descente
+                                du bois, matériau resté central dans l'architecture des chalets du village. La station
+                                de ski naît en 1936 avec l'ouverture de son premier téléski, et s'adresse aujourd'hui
+                                encore à une clientèle attachée au patrimoine et aux paysages traditionnels de montagne.
+                                Reliée aux Portes du Soleil, elle partage son domaine avec Morzine, à l'exception du
+                                secteur du Mont Chéry.
+                            </p>
+                        </div>
+
+                        <section class="chery_zoneCarte">
+                            <div class="chery_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique de la télécabine du Mont Chéry
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="chery_zonePresentation">
+
+                            <div class="chery_zonePresentation_partie1">
+                                <img src="../../images/remontees/telecabine/montChery/image1.png" alt="Vue de la ligne de la télécabine du Mont Chéry">
+                                <figcaption>
+                                    Vue de la ligne de la télécabine du Mont Chéry
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie2">
+
+                                <div class="chery_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Il n'est pas possible de dater précisément les débuts du ski sur le Mont Chéry.
+                                        D'anciennes photographies laissent supposer qu'un téléski à enrouleurs biplace
+                                        permettait autrefois d'accéder à la partie supérieure du domaine, avant d'être
+                                        remplacé par l'actuel télésiège fixe de la Grande Ourse.
+                                    </p>
+                                    <p>
+                                        Les remontées mécaniques actuelles du secteur ont été construites entre 1963 et
+                                        1986 : le téléski de la Pointe de Chéry en 1963, celui de Super Chéry en 1968,
+                                        la télécabine du Mont Chéry et le télésiège de la Grande Ourse en 1980, celui
+                                        des Planeys en 1982, celui de la Pointe en 1984, et enfin celui du Chéry Nord en
+                                        1986.
+                                    </p>
+                                    <p>
+                                        La télécabine du Mont Chéry, mise en service en 1980, reste à ce jour l'unique
+                                        accès au domaine du Mont Chéry depuis les Gets. Elle compte parmi les rares
+                                        télécabines construites par Montaz Mautino. Elle était autrefois secondée par un
+                                        télésiège fixe, démonté en 2005, qui permettait aux skieurs de rejoindre la
+                                        partie supérieure du domaine en cas de panne de la télécabine.
+                                    </p>
+                                    <p>
+                                        Les cabines d'origine, surnommées localement les « œufs carrés », ont depuis été
+                                        remplacées par des cabines CWA plus compactes, équipées de haut-parleurs
+                                        permettant au personnel d'informer directement les usagers en cas d'incident.
+                                    </p>
+                                </div>
+
+
+                                <div class="chery_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="chery_zonePresentation_partie2_sp2_sp1">
+                                        <img src="../../images/remontees/telecabine/montChery/image2.png" alt="Vue de la gare aval de la télécabine du Mont Chéry">
+                                        <figcaption>
+                                            Vue de la gare aval de la télécabine du Mont Chéry
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="chery_zonePresentation_partie2_sp3">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        La gare aval est motrice, tandis que la tension du câble s'effectue en gare
+                                        amont. L'hiver, l'appareil dessert deux pistes qui traversent chacune une route
+                                        menant à des habitations : Chamois, une piste rouge, et la partie basse de
+                                        Gazelle, une piste noire. L'été, la télécabine reste ouverte pour transporter
+                                        randonneurs et vététistes. Le restaurant d'altitude Le Belvédère, ouvert été
+                                        comme hiver, se trouve à proximité de la gare amont.
+                                    </p>
+                                </div>
+
+                                <div class="chery_zonePresentation_partie2_sp4">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        La télécabine du Mont Chéry est une télécabine à attaches débrayables 6 places,
+                                        construite par Montaz Mautino et mise en service en 1980. Elle fonctionne aussi
+                                        bien en hiver qu'en été, avec un débit de 1200 personnes par heure à une vitesse
+                                        d'exploitation de 4 m/s, pour un temps de trajet d'environ 4 minutes et 34
+                                        secondes.
+                                    </p>
+                                    <p>
+                                        La ligne développe 1094 mètres pour un dénivelé de 374 mètres, avec une pente
+                                        moyenne de 36 % et une pente maximale de 71 %. La montée s'effectue par la droite. La ligne compte 10 pylônes, et
+                                        l'installation dispose de 44 cabines CWA, chacune pouvant supporter un poids
+                                        maximal de 480 kg.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="chery_zonePresentation_partie4">
+                                <img src="../../images/remontees/telecabine/montChery/image3.png" alt="Zone d'embarquement de la télécabine du Mont Chéry">
+                                <figcaption>
+                                    Zone d'embarquement
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie5">
+                                <img src="../../images/remontees/telecabine/montChery/image4.png" alt="Zone d'embarquement de la télécabine du Mont Chéry sous un autre angle">
+                                <figcaption>
+                                    Zone d'embarquement sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie6">
+                                <img src="../../images/remontees/telecabine/montChery/image5.png" alt="Sortie du bâtiment de la gare aval">
+                                <figcaption>
+                                    Sortie du bâtiment de la gare aval
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie7">
+                                <h2>Ligne</h2>
+                                <p>
+                                    Depuis le reportage initial, la Sagets a repeint l'ensemble des pylônes de la ligne
+                                    et entrepris le remplacement progressif des balanciers d'origine Montaz Mautino, plus
+                                    résistants à l'usure. Une réflexion a également été menée sur la suppression du
+                                    pylône compression P5, installé à l'origine pour éviter une ligne électrique
+                                    aujourd'hui enterrée, ainsi que sur le pylône P7, qui supporte peu de charge et
+                                    présente un risque de déraillement du câble lors du rangement des cabines en soirée.
+                                </p>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie8">
+                                <img src="../../images/remontees/telecabine/montChery/image6.png" alt="Pylônes 1 et 2 vus de côté">
+                                <figcaption>
+                                    Pylônes 1 et 2 vus de côté
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie9">
+                                <img src="../../images/remontees/telecabine/montChery/image7.png" alt="Pylône 2 vu de l'arrière">
+                                <figcaption>
+                                    Pylône 2 vu de l'arrière
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie10">
+                                <img src="../../images/remontees/telecabine/montChery/image8.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie11">
+                                <img src="../../images/remontees/telecabine/montChery/image9.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie12">
+                                <img src="../../images/remontees/telecabine/montChery/image10.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie13">
+                                <img src="../../images/remontees/telecabine/montChery/image11.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie14">
+                                <img src="../../images/remontees/telecabine/montChery/image12.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie15">
+                                <img src="../../images/remontees/telecabine/montChery/image13.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie16">
+                                <img src="../../images/remontees/telecabine/montChery/image14.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie17">
+                                <img src="../../images/remontees/telecabine/montChery/image15.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie18">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    Contrairement à la majorité des télécabines de la station, la tension de l'appareil
+                                    s'effectue en gare amont, via un système hydraulique d'origine toujours en service.
+                                    Les cabines y sont rangées dans un garage dédié en fin de journée.
+                                </p>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie19">
+                                <img src="../../images/remontees/telecabine/montChery/image16.png" alt="Vue de la gare amont de la télécabine du Mont Chéry">
+                                <figcaption>
+                                    Vue de la gare amont de la télécabine du Mont Chéry
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie20">
+                                <img src="../../images/remontees/telecabine/montChery/image17.png" alt="Zone de débarquement de la télécabine du Mont Chéry">
+                                <figcaption>
+                                    Zone de débarquement
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie21">
+                                <h2>Véhicules et pinces</h2>
+                                <p>
+                                    Les cabines CWA actuelles ont remplacé les anciennes cabines dites « œufs carrés »,
+                                    équipées à l'époque de panneaux solaires diffusant les informations d'exploitation
+                                    ainsi que la radio locale. Le cadenceur automatique, qui régule l'espacement des
+                                    cabines, a été installé dans les années 2000, en remplacement d'une gestion
+                                    entièrement manuelle à l'origine.
+                                </p>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie22">
+                                <img src="../../images/remontees/telecabine/montChery/image18.png" alt="Cabine CWA en gare amont">
+                                <figcaption>
+                                    Cabine CWA en gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="chery_zonePresentation_partie23">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Plus de quarante ans après sa construction, la télécabine du Mont Chéry demeure
+                                    l'unique porte d'entrée du secteur depuis les Gets. Malgré les évolutions apportées
+                                    au fil des décennies (repeinte des pylônes, remplacement progressif des balanciers,
+                                    cadenceur automatique), l'appareil a conservé plusieurs éléments d'origine, dont son
+                                    système de tension hydraulique, témoignant de la robustesse de cette installation
+                                    Montaz Mautino.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/montChery.js"></script>
+
+</body>
+</html>

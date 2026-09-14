@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TCD6 des Chavannes | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/telecabineChavannes.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="tcd6_intro">
+                        <h1>TCD6 - La télécabine des Chavannes</h1>
+                    </section>
+
+                    <section class="tcd6_zoneGeneral">
+
+                        <div class="tcd6_zoneGeneral_intro">
+                            <h2>Les Gets et le secteur des Chavannes</h2>
+                            <p>
+                                La station des Gets est située en Haute-Savoie, au niveau du col du même nom, qui sépare
+                                la vallée d'Aulps de celle du Giffre. Le village compte environ 1300 habitants à
+                                l'année. La station est reliée au vaste domaine franco-suisse des Portes du Soleil, qui
+                                regroupe 12 stations pour un total de 650 kilomètres de pistes balisées, l'un des plus
+                                grands domaines skiables au monde.
+                            </p>
+                            <p>
+                                Aux Gets, on skie sur deux secteurs principaux : le Mont Chéry, exposé sud, moins
+                                fréquenté, et les Chavannes, accolé à celui de Morzine, qui assure la liaison avec le
+                                reste des Portes du Soleil.
+                            </p>
+                        </div>
+
+                        <section class="tcd6_zoneCarte">
+                            <div class="tcd6_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique de la télécabine des Chavannes
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="tcd6_zonePresentation">
+
+                            <div class="tcd6_zonePresentation_partie1">
+                                <img src="../../images/remontees/telecabine/chavannes/image1.png" alt="Vue de la gare aval de la télécabine des Chavannes">
+                                <figcaption>
+                                    Vue de la gare aval de la télécabine des Chavannes
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie2">
+
+                                <div class="tcd6_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Durant l'été 2010, la Sagets, exploitant du domaine des Gets, engage un plan de
+                                        restructuration du front de neige du secteur des Chavannes, incluant le
+                                        remplacement de la télécabine et du téléski historique de la Boule de Gomme,
+                                        datant de 1936.
+                                    </p>
+                                    <p>
+                                        L'ancienne télécabine des Chavannes, construite par Poma en 1973, était une
+                                        télécabine quadriplace de type œuf, équipée d'une double pince S. Sa vétusté et
+                                        son débit insuffisant ont conduit à son remplacement. Pour optimiser les coûts,
+                                        la Sagets a choisi de conserver une grande partie de l'ancien appareil,
+                                        notamment la plupart des pylônes ainsi que le bâtiment de la gare amont. La
+                                        construction du nouveau téléporté a été confiée au même constructeur, Poma, 37
+                                        ans après.
+                                    </p>
+                                    <p>
+                                        La nouvelle télécabine, réalisée sur mesure avec des gares Satellit adaptées aux
+                                        contraintes de l'existant, est équipée de 39 cabines Diamond C6S150 du carrossier
+                                        Sigma, chacune pouvant accueillir 6 personnes réparties sur deux banquettes de 3
+                                        places. En hommage à l'ancienne installation, la couleur rouge des cabines
+                                        d'origine a été conservée. L'accouplement au câble se fait par pince Oméga T.
+                                    </p>
+                                </div>
+
+                                <div class="tcd6_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="tcd6_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telecabine/chavannes/image2.png" alt="Carte de localisation de la télécabine des Chavannes">
+                                        <figcaption>
+                                            Localisation géographique de la télécabine des Chavannes
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="tcd6_zonePresentation_partie2_sp3">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        La télécabine des Chavannes est une télécabine à attaches débrayables 6 places,
+                                        construite par Poma et mise en service en 2010. Elle offre un débit de 1200
+                                        personnes par heure, extensible à 1500 par ajout de cabines, à une vitesse de
+                                        5,0 m/s, pour une durée de trajet d'environ 6 minutes et 30 secondes.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1172 mètres d'altitude et la gare amont à 1490 mètres,
+                                        soit un dénivelé de 317 mètres pour une longueur de ligne de 1529 mètres. La
+                                        pente moyenne est de 21 % et la pente maximale atteint 50 %.
+                                    </p>
+                                    <p>
+                                        Les gares, motrice et tension, sont toutes deux situées en aval, avec une
+                                        tension hydraulique. La montée s'effectue par la droite. La ligne compte 11
+                                        pylônes, et l'installation dispose de 39 cabines Diamond C6S150 équipées de
+                                        pinces Oméga T.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie3">
+                                <img src="../../images/remontees/telecabine/chavannes/image3.png" alt="Vue de la gare aval de la télécabine des Chavannes sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare aval sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie4">
+                                <img src="../../images/remontees/telecabine/chavannes/image4.png" alt="Zone d'embarquement de la télécabine des Chavannes">
+                                <figcaption>
+                                    Zone d'embarquement
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie5">
+                                <img src="../../images/remontees/telecabine/chavannes/image5.png" alt="Une cabine dans le lanceur de la télécabine des Chavannes">
+                                <figcaption>
+                                    Une cabine dans le lanceur
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie6">
+                                <h2>Ligne</h2>
+                                <p>
+                                    La ligne présente la particularité de mêler deux types de pylônes : par souci de
+                                    maîtrise budgétaire, une grande partie des pylônes en treillis de l'ancienne ligne a
+                                    été conservée, seuls les pylônes P0, P7 et P11 ayant dû être remplacés par des
+                                    pylônes tubulaires. Le tracé monte de façon régulière de la gare aval jusqu'au P2,
+                                    puis la pente s'adoucit jusqu'au P7, dont la compression redonne une inclinaison
+                                    plus soutenue jusqu'en gare amont. La ligne compte 3 balanciers compression et 8
+                                    balanciers support.
+                                </p>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie7">
+                                <img src="../../images/remontees/telecabine/chavannes/image6.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie8">
+                                <img src="../../images/remontees/telecabine/chavannes/image7.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie9">
+                                <img src="../../images/remontees/telecabine/chavannes/image8.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie10">
+                                <img src="../../images/remontees/telecabine/chavannes/image9.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie11">
+                                <img src="../../images/remontees/telecabine/chavannes/image10.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie12">
+                                <img src="../../images/remontees/telecabine/chavannes/image11.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie13">
+                                <img src="../../images/remontees/telecabine/chavannes/image12.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie14">
+                                <img src="../../images/remontees/telecabine/chavannes/image13.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie15">
+                                <img src="../../images/remontees/telecabine/chavannes/image14.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie16">
+                                <img src="../../images/remontees/telecabine/chavannes/image15.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie17">
+                                <img src="../../images/remontees/telecabine/chavannes/image16.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie18">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    Le bâtiment de la gare amont ayant été conservé, la nouvelle gare Satellit a dû être
+                                    adaptée à l'intérieur d'une structure initialement dimensionnée pour l'ancienne
+                                    télécabine 4 places. Un imposant massif en béton a été construit à l'arrière de la
+                                    gare, relié à la station Satellit par trois tiges métalliques, afin de sécuriser la
+                                    tension de l'appareil. Le bâtiment abrite également un garage permettant le
+                                    rangement de l'ensemble des cabines.
+                                </p>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie19">
+                                <img src="../../images/remontees/telecabine/chavannes/image17.png" alt="Vue de la gare amont de la télécabine des Chavannes">
+                                <figcaption>
+                                    Vue de la gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie20">
+                                <img src="../../images/remontees/telecabine/chavannes/image18.png" alt="Zone de débarquement de la télécabine des Chavannes">
+                                <figcaption>
+                                    Zone de débarquement
+                                </figcaption>
+                            </div>
+
+                            <div class="tcd6_zonePresentation_partie21">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Le remplacement de la télécabine des Chavannes par un appareil à gares Satellit et
+                                    cabines modernes Diamond 6 places a permis de redynamiser le front de neige du
+                                    secteur. Cette nouveauté 2010-2011 assure le transport des skieurs plus rapidement
+                                    et dans de bien meilleures conditions de confort que l'appareil de 1973. Principalement
+                                    destinée à la clientèle familiale et débutante, elle constitue un complément parfait
+                                    au télésiège des Chavannes Express, les deux appareils offrant ensemble un débit
+                                    total de 4200 personnes par heure sur le front de neige principal.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/telecabineChavannes.js"></script>
+
+</body>
+</html>

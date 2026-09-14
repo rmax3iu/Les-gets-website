@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSF4 des Folliets | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/lesFolliets.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="folliets_intro">
+                        <h1>TSF4 - Le télésiège des Folliets</h1>
+                    </section>
+
+                    <section class="folliets_zoneGeneral">
+
+                        <div class="folliets_zoneGeneral_intro">
+                            <h2>Les Portes du Soleil et les Gets</h2>
+                            <p>
+                                Le domaine skiable des Portes du Soleil est un vaste espace franco-suisse regroupant
+                                douze stations, où l'on skie entre 900 et 2275 mètres d'altitude sur plus de 450
+                                kilomètres de pistes. Situé au cœur du massif du Chablais, il bénéficie d'un enneigement
+                                réputé, notamment à Avoriaz.
+                            </p>
+                            <p>
+                                Les Gets, village de 1500 habitants à l'année installé à 1160 mètres d'altitude, propose
+                                un domaine relié à celui de Morzine, pour près de 120 kilomètres de pistes réparties sur
+                                deux secteurs distincts de part et d'autre du village : le Mont Chéry au nord, plus
+                                sportif et exposé sud-est, et les Chavannes au sud, plus fréquenté et relié à Morzine.
+                            </p>
+                        </div>
+
+                        <section class="folliets_zoneCarte">
+                            <div class="folliets_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège des Folliets
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="folliets_zonePresentation">
+
+                            <div class="folliets_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image1.png" alt="Vue de la gare aval du télésiège des Folliets">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège des Folliets
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie2">
+
+                                <div class="folliets_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Le ski débute aux Gets en 1937 avec la construction du téléski de la Boule de
+                                        Gomme sur le versant des Chavannes. L'équipement de ce versant se poursuit dans
+                                        les années 1950, puis la liaison à ski avec Morzine devient possible dès 1962
+                                        avec le téléski de la Tête des Crêts.
+                                    </p>
+                                    <p>
+                                        En 1979, le télésiège triplace de la Charniaz simplifie considérablement le
+                                        trajet de Morzine vers les Gets. Mais dans l'autre sens, rejoindre Morzine
+                                        depuis les Gets restait un long détour, enchaînant plusieurs téléskis et
+                                        télésièges. Cette situation prend fin en 1998, avec la construction d'un
+                                        télésiège quadriplace Pomagalski au-dessus du quartier des Folliets du Golf, sur
+                                        un secteur jusque-là vierge de toute remontée.
+                                    </p>
+                                    <p>
+                                        L'appareil appartient à la famille des télésièges Alpha de Poma, reconnaissable
+                                        à ses gares motrices-tensions caractéristiques. Il dispose d'un tapis de
+                                        positionnement à l'embarquement, destiné à faciliter la montée sur le siège.
+                                    </p>
+                                </div>
+
+                                <div class="folliets_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="folliets_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/fixe/lesFolliets/image2.png" alt="Carte de localisation du télésiège des Folliets">
+                                        <figcaption>
+                                            Localisation géographique du télésiège des Folliets
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="folliets_zonePresentation_partie2_sp3">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        Le télésiège des Folliets assure la liaison entre les Gets et Morzine. Il dessert
+                                        également plusieurs pistes : la bleue Crocus, qui redescend en serpentant sur
+                                        les terrains de golf ; la bleue Granges, qui mène au pied des télésièges des
+                                        Têtes, de la Charniaz et des Troncs ; la bleue Piste B, qui longe la ligne du
+                                        télésiège du Belvédère jusqu'au front de neige de Morzine ; et la rouge Piste F,
+                                        qui redescend jusqu'au télésiège d'Atray.
+                                    </p>
+                                </div>
+
+                                <div class="folliets_zonePresentation_partie2_sp4">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Le télésiège des Folliets est un télésiège à attaches fixes 4 places, construit
+                                        par Poma et mis en service en 1998. Il fonctionne en saison hivernale, avec une
+                                        capacité de 1630 personnes par heure à une vitesse d'exploitation de 2,5 m/s,
+                                        pour un temps de trajet d'environ 4 minutes.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1362 mètres d'altitude et la gare amont à 1551 mètres,
+                                        soit un dénivelé de 189 mètres pour une longueur développée de 884 mètres. La
+                                        pente moyenne est de 23,14 % et la pente maximale atteint 50 %.
+                                    </p>
+                                    <p>
+                                        La gare aval, de type Alpha à six vitres, assure la motricité et la tension
+                                        hydraulique de l'installation. La montée s'effectue par la gauche. La ligne
+                                        compte 6 pylônes et l'installation dispose de 77 sièges Arceau Poma 4 places.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image3.png" alt="Vue de la gare aval du télésiège des Folliets sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège des Folliets sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image5.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image6.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image7.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image8.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image9.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image10.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie11">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont du télésiège des Folliets est une simple poulie retour fixe, typique
+                                    des installations Poma de cette génération. L'arrivée en gare amont se fait à
+                                    proximité du site accueillant le festival Rock the Pistes.
+                                </p>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image11.png" alt="Vue de la gare amont du télésiège des Folliets">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège des Folliets
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie13">
+                                <h2>Sièges et pinces</h2>
+                                <p>
+                                    Les 77 sièges de l'appareil sont des sièges Arceau Poma 4 places, équipés de pinces
+                                    fixes classiques pour cette génération de télésièges.
+                                </p>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/fixe/lesFolliets/image12.png" alt="Siège Arceau du télésiège des Folliets">
+                                <figcaption>
+                                    Siège Arceau du télésiège des Folliets
+                                </figcaption>
+                            </div>
+
+                            <div class="folliets_zonePresentation_partie15">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Construit par Poma en 1998, le télésiège des Folliets a mis fin à un long détour
+                                    pour rejoindre Morzine depuis les Gets. Très fréquenté, il continue de bien remplir
+                                    son rôle de liaison, et sa jeunesse relative ainsi que la faible longueur de son
+                                    tracé ne laissent présager aucun remplacement à court terme.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/lesFolliets.js"></script>
+
+</body>
+</html>

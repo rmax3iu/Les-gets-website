@@ -1,0 +1,1750 @@
+/* ################################################################################################################################################## */
+/* ############################################################## - Page n°0 - Index - ############################################################## */
+/* ################################################################################################################################################## */
+
+/* ####################################################################################################### */
+/* ############################################# - Le body - ############################################# */
+/* ####################################################################################################### */
+
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* ####################################################################################################### */
+/* ############################################# - Le main - ############################################# */
+/* ####################################################################################################### */
+
+main
+{
+    flex: 1;
+    min-width: 0;
+}
+
+/* ####################################################################################################### */
+/* ############################## - Le positionnement vertical principal - ############################### */
+/* ####################################################################################################### */
+
+
+.page0_positionVerticale1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ####################################################################################################### */
+/* ############################## - Le positionnement horizontal principal - ############################# */
+/* ####################################################################################################### */
+
+.page0_positionHorizontale1
+{
+    display : flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* ####################################################################################################### */
+/* ###################################### - Navigation principale - ###################################### */
+/* ####################################################################################################### */
+
+nav
+{
+    overflow: visible;
+    z-index: 100;
+    background-color: #edeef0;
+    flex-direction: column;
+    display: flex;
+    position: sticky; 
+    top: 0;          
+    height: 100vh;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* ####################################################################################################### */
+/* ######################################## - Le logo du site - ########################################## */
+/* ####################################################################################################### */
+
+.page0_nav1
+{
+    align-items: center;
+    text-align: center;
+}
+
+.page0_nav1_img1
+{
+    opacity: 0;
+    margin:10px;
+    height:90px;
+    transform: translateX(-40px);
+    animation: slideIcone 1.2s ease-out forwards;
+}
+
+/* ####################################################################################################### */
+/* ##################################### - Le menu de naviguation - ###################################### */
+/* ####################################################################################################### */
+
+.page0_nav2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1; 
+}
+
+.page0_nav2 ul
+{
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.page0_ul_li_img
+{
+    opacity: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    transform: translateX(-40px);
+    animation: slideIcone 1.2s ease-out forwards;
+}
+
+.page0_ul_li_img:first-child
+{
+    margin-top: 10px;
+}
+
+.page0_ul_li_img:last-child
+{
+    margin-bottom: 10px;
+}
+
+li
+{
+    position: relative;
+}
+
+.page0_li_texte
+{
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4D778E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+li:hover .page0_li_texte
+{
+    opacity: 1;
+}
+
+/* ####################################################################################################### */
+/* ################################ - Animation du menu de naviguation - ################################# */
+/* ####################################################################################################### */
+
+@keyframes slideIcone
+{
+    to
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.page0_nav1_img1 {animation-delay: 0s;}
+.page0_nav2 ul li:nth-child(1) .page0_ul_li_img { animation-delay: 0.15s; }
+.page0_nav2 ul li:nth-child(2) .page0_ul_li_img { animation-delay: 0.30s; }
+.page0_nav2 ul li:nth-child(3) .page0_ul_li_img { animation-delay: 0.45s; }
+.page0_nav2 ul li:nth-child(4) .page0_ul_li_img { animation-delay: 0.60s; }
+.page0_nav2 ul li:nth-child(5) .page0_ul_li_img { animation-delay: 0.75s; }
+.page0_nav2 ul li:nth-child(6) .page0_ul_li_img { animation-delay: 0.90s; }
+
+/* ####################################################################################################### */
+/* ################################## - Le contenu principale de la page - ############################### */
+/* ####################################################################################################### */
+
+.page0_positionVerticale2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ####################################################################################################### */
+/* ######################################### - Section n°1 - ############################################# */
+/* ####################################################################################################### */
+
+.page0_sect1
+{
+    position: relative;
+    display: flex;                
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page0_sect1 h1 
+{
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    border-radius: 14px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideH1 1.2s ease-out forwards;
+    text-align: center;
+}
+
+@keyframes slideH1 
+{
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page0_sect1 img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ####################################################################################################### */
+/* ########################################### - Section n°2 - ########################################### */
+/* ####################################################################################################### */
+
+.page0_sect2
+{
+    font-family: "Montserrat", sans-serif;
+    background-color: #dfe2ed;
+    padding: 60px 20px;
+}
+
+
+.page0_sect2_titre
+{
+    text-align: center;
+}
+
+.page0_sect2_titre:after 
+{
+    content: '';
+    display: block;
+    width: 180px;
+    height: 4px;
+    background-color: #013c4c;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.page0_sect2 h2 
+{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 22px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-20px);
+    animation: slideH2 1.2s ease-out forwards;
+}
+
+@keyframes slideH2 
+{
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page0_positionHorizontale2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ####################################################################################################### */
+/* ##################################### - Section n°1 : Image n°1 - ##################################### */
+/* ####################################################################################################### */
+
+.page0_zoneCarte1
+{
+    background-color: #013c4c;
+    border-radius: 10px;
+}
+
+.page0_laCarte1
+{
+    height: 460px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.page0_texteCarte1
+{
+    color: white;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.page0_textePresentation
+{
+    text-align: justify;
+    margin: 40px;
+}
+
+/* ####################################################################################################### */
+/* ##################################### - Section n°1 : Image n°2 - ##################################### */
+/* ####################################################################################################### */
+
+.page0_zoneCarte2
+{
+    background-color: #013c4c;
+    border-radius: 10px;
+}
+
+.page0_laCarte2
+{
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.page0_texteCarte2
+{
+    color: white;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+
+/* ####################################################################################################### */
+/* ############################## - Animations de la page d'accueil - #################################### */
+/* ####################################################################################################### */
+
+li:hover 
+{
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+
+.page0_zoneCarte1,
+.page0_zoneCarte2 
+{
+    background-color: #013c4c;
+    border-radius: 10px;
+    transition: box-shadow 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.page0_zoneCarte1:hover,
+.page0_zoneCarte2:hover 
+{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.22); 
+}
+
+.page0_textePresentation 
+{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: apparitionTexte 2s ease-out 0.5s forwards;
+}
+
+@keyframes apparitionTexte 
+{
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page0_textePresentation p 
+{
+    transition: color 0.3s ease;
+}
+
+.page0_textePresentation p:hover 
+{
+    color: #013c4c;
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ################################################### - Page n°1 - La localisation géographique - ################################################## */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.page1_intro 
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage7.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.page1_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page1_intro h1::after
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLigneGeo 1s ease-out forwards;
+}
+
+@keyframes extensionLigneGeo
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 120px;
+    }
+}
+
+.page1_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* ################################################################################################# */
+/* ############################################# Cartes d'infos #################################### */
+/* ################################################################################################# */
+
+.page1_infos
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.page1_info
+{
+    width: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.page1_info:hover
+{
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.page1_info h3
+{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.page1_info p
+{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ################################################################################################# */
+/* ################################################## Carte ######################################## */
+/* ################################################################################################# */
+
+#carte
+{
+    width: 80%;
+    max-width: 1200px;
+    height: 550px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+    border: 3px solid white;
+}
+
+/* ################################################################################################# */
+/* ################################## - Animations de la page - #################################### */
+/* ################################################################################################# */
+
+@keyframes apparitionCarteInfo 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page1_info 
+{
+    opacity: 0; 
+    animation: apparitionCarteInfo 0.5s ease-out forwards;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page1_info:nth-child(1) { animation-delay: 0.3s; }
+.page1_info:nth-child(2) { animation-delay: 0.6s; }
+.page1_info:nth-child(3) { animation-delay: 0.9s; }
+
+.page1_info:hover 
+{
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ################################################### - Page n°2 - Les anciens plans du domaine - ################################################## */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.plan_intro
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage12.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.plan_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.plan_intro h1::after
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLignePlan 1s ease-out forwards;
+}
+
+@keyframes extensionLignePlan
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 120px;
+    }
+}
+
+.plan_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.plan_selecteur
+{
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+}
+
+.plan_selecteur label
+{
+    margin-right:10px;
+}
+
+#annee_affichee
+{
+    width: 1100px;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+#annee_affichee:has(img)
+{
+    width: fit-content;
+    height: fit-content;
+    max-width: 1300px;
+    max-height: 700px;
+}
+
+#annee_affichee img
+{
+    max-width: 100%;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* ################################################################################################# */
+/* ############################# - Animations pour la page des plans - ############################# */
+/* ################################################################################################# */
+
+.plan_selecteur label
+{
+    font-size: 1.2rem;
+}
+
+.plan_selecteur select
+{
+    font-size: 1.1rem;
+    margin-top: 2px;
+    border: 2px solid #013c4c;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan_selecteur select:hover,
+.plan_selecteur select:focus
+{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ##################################################### - Page n°3 - Les remontées mécaniques - #################################################### */
+/* ################################################################################################################################################## */
+
+/* ####################################################################################################### */
+/* ############################################# - Introduction - ######################################## */
+/* ####################################################################################################### */
+
+.page2_intro
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage9.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.page2_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page2_intro h1::after
+{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+
+.page2_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ####################################################################################################### */
+/* ##################################### - Grand titre de catégorie - #################################### */
+/* ####################################################################################################### */
+
+.page2_grandTitre
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.page2_grandTitre h2
+{
+    width: 76%;
+    box-sizing: border-box;
+    color: white;
+    font-weight: normal;
+    background-color: #789b67;
+    border-radius: 14px;
+    padding:16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2_grandTitre h2
+{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.page2_grandTitre h2:hover
+{
+    transform: translateY(-2px);
+    background-color: #688858;
+}
+
+
+/* ####################################################################################################### */
+/* ########################################### - Sous-titre - ############################################ */
+/* ####################################################################################################### */
+
+.page2_sousTitre
+{
+    text-align: center;
+    margin-left: -680px;
+}
+
+.page2_sousTitre h3
+{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #444;
+    background-color: #f2f4f7;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-top:-1px;
+}
+
+/* ####################################################################################################### */
+/* ############################################# - Tableau - ############################################# */
+/* ####################################################################################################### */
+
+.page2_tableau
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.page2_tableau table
+{
+    width: 80%;
+    border-collapse: collapse;
+    font-family: "Work Sans", sans-serif;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.page2_tableau th
+{
+    background-color: #476691;
+    color: white;
+    padding: 18px;
+    font-size: 1.1rem;
+}
+
+.page2_tableau td
+{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+}
+
+.page2_tableau tr:nth-child(even) td
+{
+    background-color: #f2f4f7;
+}
+
+.page2_tableau tr:hover td
+{
+    background-color: #dfe8f2;
+}
+
+.page2_tableau td a 
+{
+    color: #476691;
+    text-decoration: none;
+    font-weight: 550;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.page2_tableau td a:hover 
+{
+    color: #2b3e59;
+    transform: translateX(6px); 
+}
+
+@keyframes extensionLigne 
+{
+    from 
+    {
+        width: 0;
+    }
+    to 
+    {
+        width: 120px;
+    }
+}
+
+.page2_intro h1::after 
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLigne 1s ease-out forwards;
+}
+
+@keyframes apparationDouce 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page2_grandTitre 
+{
+    animation: apparationDouce 1s ease-out forwards;
+}
+
+/* ####################################################################################################### */
+/* ########################################## - Icône tableau - ########################################## */
+/* ####################################################################################################### */
+
+.icone-ouverture
+{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.texte-ouverture
+{
+    margin-left: 10px;
+}
+
+
+/* ################################################################################################# */
+/* ###################################### - Carte globale des remontées - ########################## */
+/* ################################################################################################# */
+
+.page2_carte
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:76%;
+    margin:16px auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.page2_carte #map
+{
+    width:100%;
+    height:600px;
+    border-radius:20px 20px 0 0;
+}
+
+.page2_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ############################################################# - Page n°4 - La météo - ############################################################ */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.meteo_intro 
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.meteo_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.meteo_intro h1::after
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLigneMeteo 1s ease-out forwards;
+}
+
+@keyframes extensionLigneMeteo
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 120px;
+    }
+}
+
+.meteo_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur global - #################################### */
+/* ################################################################################################# */
+
+.meteo_container
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto 60px;
+}
+
+.meteo_container_section1,
+.meteo_container_section2
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    padding: 20px;
+}
+
+/* ################################################################################################# */
+/* ############################################# - Titres - ######################################## */
+/* ################################################################################################# */
+
+.meteo_container_section1_titre,
+.meteo_container_section2_titre
+{
+    background-color: #789b67;
+    border-radius: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.meteo_container_section1_titre h3,
+.meteo_container_section2_titre h3
+{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.meteo_date
+{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* ################################################################################################# */
+/* ############################################# - Bloc météo - #################################### */
+/* ################################################################################################# */
+
+.meteo_container_section1_meteo,
+.meteo_container_section2_meteo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    background-color: #e7f1f3;
+    padding: 15px;
+}
+
+.meteo_bloc_titre
+{
+    color: #7388ba;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.meteo_bloc_contenu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.meteo_colonne
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 45%;
+}
+
+.meteo_separateur
+{
+    width: 3px;
+    height: 70px;
+    background-color: #cbd5e1;
+}
+
+.meteo_moment
+{
+    color:#7388ba;
+    font-size: 1.2rem;
+}
+
+.meteo_etat
+{
+    font-size: 1.05rem;
+    color: #000000;
+}
+
+.meteo_temp
+{
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: #000000;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Bloc enneigement - ################################### */
+/* ################################################################################################# */
+
+.meteo_container_section1_enneigement,
+.meteo_container_section2_enneigement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    background-color: #e7f1f3;
+    padding: 15px;
+}
+
+.enneigement_bloc_titre
+{
+    color: #7388ba;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.enneigement_bloc_contenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.enneigement_hauteur_label
+{
+    font-size: 1.05rem;
+    color: #000000;
+}
+
+.enneigement_hauteur_valeur
+{
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: #000000;
+}
+
+/* ################################################################################################# */
+/* ######################################### - Bloc avalanche - #################################### */
+/* ################################################################################################# */
+
+.meteo_container_section1_avalanche,
+.meteo_container_section2_avalanche
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    background-color: #e7f1f3;
+    padding: 15px;
+}
+
+.avalanche_bloc_titre
+{
+    color: #7388ba;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.avalanche_bloc_contenu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avalanche_valeur
+{
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #000000;
+}
+
+.avalanche_image
+{
+    height: 70%;
+}
+
+@keyframes apparitionMeteo 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.meteo_container_section1,
+.meteo_container_section2 
+{
+    animation: apparitionMeteo 0.8s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meteo_container_section1:hover,
+.meteo_container_section2:hover 
+{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.meteo_container_section1_meteo,
+.meteo_container_section2_meteo,
+.meteo_container_section1_enneigement,
+.meteo_container_section2_enneigement,
+.meteo_container_section1_avalanche,
+.meteo_container_section2_avalanche 
+{
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.meteo_container_section1_meteo:hover,
+.meteo_container_section2_meteo:hover,
+.meteo_container_section1_enneigement:hover,
+.meteo_container_section2_enneigement:hover,
+.meteo_container_section1_avalanche:hover,
+.meteo_container_section2_avalanche:hover 
+{
+    transform: scale(1.02);
+    background-color: #dcebf0;
+}
+
+.meteo_container_section1_titre,
+.meteo_container_section2_titre 
+{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.meteo_container_section1_titre:hover,
+.meteo_container_section2_titre:hover 
+{
+    transform: translateY(-2px);
+    background-color: #688858;
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ############################################## - Page n°5 - Le taux d'ouverture du domaine skiable - ############################################# */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.ouverture_intro
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage7.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.ouverture_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ouverture_intro h1::after
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLigneOuverture 1s ease-out forwards;
+}
+
+@keyframes extensionLigneOuverture
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 120px;
+    }
+}
+
+.ouverture_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ################################################################################################# */
+/* ######################################### - Remontées mécaniques - ############################## */
+/* ################################################################################################# */
+
+.ouverture_mecanique
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.ouverture_mecanique h2
+{
+    color: white;
+    font-weight: normal;
+    background-color: #789b67;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.ouverture_mecanique_information
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Donut de pourcentage - ################################ */
+/* ################################################################################################# */
+
+.ouverture_mecanique_information_stat
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.cercle-ouverture
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cercle-ouverture_interieur
+{
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+#nombre-remontees-ouvertes
+{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #013c4c;
+}
+
+#pourcentage-remontees-ouvertes
+{
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Liste des remontées - ################################ */
+/* ################################################################################################# */
+
+#liste-remontees
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 30px;
+}
+
+.remontee_ligne
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.remontee_icone
+{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.remontee_icone svg
+{
+    width: 100%;
+    height: 100%;
+}
+
+.remontee_nom
+{
+    flex: 1;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.remontee_statut
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    white-space: nowrap;
+}
+
+.remontee_statut img
+{
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px)
+{
+    #liste-remontees
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ################################################################################################# */
+/* ###################################### - Bloc bientôt disponible - ############################## */
+/* ################################################################################################# */
+
+.ouverture_prochainement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px 30px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.ouverture_prochainement h2
+{
+    color: #476691;
+    font-size: 1.6rem;
+    margin: 25px 0 15px;
+}
+
+.ouverture_prochainement p
+{
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 380px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Animation télésiège - ################################## */
+/* ################################################################################################# */
+
+.ouverture_anim
+{
+    position: relative;
+    width: 220px;
+    height: 50px;
+}
+
+.ouverture_ligne
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: repeating-linear-gradient(to right, #b0b6bf 0, #b0b6bf 8px, transparent 8px, transparent 16px);
+    transform: translateY(-50%);
+}
+
+.ouverture_telesiege
+{
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    transform: translateY(-50%);
+    animation: deplacementTelesiege 3s ease-in-out infinite alternate;
+}
+
+@keyframes deplacementTelesiege
+{
+    from
+    {
+        left: 0;
+    }
+    to
+    {
+        left: calc(100% - 40px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ####################################################### - Page n°6 - Les webcams - ############################################################### */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.webcam_intro
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.webcam_intro h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.webcam_intro h1::after
+{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 15px auto;
+    border-radius: 20px;
+    animation: extensionLigneWebcam 1s ease-out forwards;
+}
+
+@keyframes extensionLigneWebcam
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 120px;
+    }
+}
+
+.webcam_intro p
+{
+    color: white;
+    font-size: 1.1rem;
+    max-width: 1000px;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.webcam_grille
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam_carte h2
+{
+    color: white;
+    font-weight: normal;
+    background-color: #789b67;
+    border-radius: 14px;
+    padding:16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam_carte iframe
+{
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.webcam_carte h2
+{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.webcam_carte h2:hover
+{
+    transform: translateY(-2px);
+    background-color: #688858;
+}
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################################################################################## */
+/* ############################################################ - Pied de page - #################################################################### */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Pied de page - ################################### */
+/* ################################################################################################# */
+
+.footer
+{
+    background-color: #105366;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    padding: 32px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_phrase
+{
+    margin: 0;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* ################################################################################################################################################## */
+/* ################################################################################################################################################## */
+/* ################################################################################################################################################## */

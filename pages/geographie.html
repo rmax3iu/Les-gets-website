@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localisation géographique | Les Gets</title>
+  <link rel="icon" href="../images/logo/logo1/logo1_sf.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="page0_positionVerticale1">
+    <div class="page0_positionHorizontale1">
+
+      <!-- Navigation principale -->
+      <nav>
+        <div class="page0_nav1">
+          <a href="../index.html">
+            <img class="page0_nav1_img1" src="../images/logo/logo1/logo1_sf.png" alt="Image du logo des Gets">
+          </a>
+        </div>
+
+        <!-- Menu de navigation avec icônes -->
+        <div class="page0_nav2">
+          <ul>
+            <li>
+              <a href="geographie.html">
+                <img class="page0_ul_li_img" src="../images/icone/localisation/localisation1_sf.png" alt="Icône localisation">
+                <p class="page0_li_texte">La localisation géographique</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="plan.html">
+                <img class="page0_ul_li_img" src="../images/icone/carte/carte1_sf.png" alt="Icône carte">
+                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="remontees/remontees.html">
+                <img class="page0_ul_li_img" src="../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                <p class="page0_li_texte">Les remontées mécaniques</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="meteo.html">
+                <img class="page0_ul_li_img" src="../images/icone/flocon/flocon1_sf.png" alt="Icône flocon">
+                <p class="page0_li_texte">La météo</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="ouvertureDomaine.html">
+                <img class="page0_ul_li_img" src="../images/icone/skieur/skieur1_sf.png" alt="Icône skieur">
+                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="webcam.html">
+                <img class="page0_ul_li_img" src="../images/icone/webcam/webcam1_sf.png" alt="Icône webcam">
+                <p class="page0_li_texte">Les webcams</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contenu principal -->
+      <main>
+        <div class="page1_positionVerticale">
+
+            <!-- Introduction -->
+            <section class="page1_intro"> 
+              <h1>Où se situent Les Gets ?</h1> 
+              <p> Les Gets se trouve en Haute-Savoie, au cœur du massif du Chablais, entre la vallée d'Aulps et celle de Taninges. <br> Déplace-toi et zoom sur la carte pour explorer la région. </p> 
+            
+              <div class="page1_infos">
+                <div class="page1_info">
+                  <h3>Altitude</h3>
+                  <p>1172 m</p>
+                </div>
+
+                <div class="page1_info">
+                  <h3>Domaine</h3>
+                  <p>Portes du Soleil</p>
+                </div>
+
+                <div class="page1_info">
+                  <h3>Habitants</h3>
+                  <p>1 227</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Carte -->
+            <div id="carte"></div>
+
+        </div>
+      </main>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+
+      <div class="footer_contact_bloc">
+        <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../js/carte.js"></script>
+</body>
+</html>

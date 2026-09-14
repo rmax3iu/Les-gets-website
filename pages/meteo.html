@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La météo | Les Gets</title>
+
+    <link rel="icon" href="../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../index.html">
+                        <img class="page0_nav1_img1" src="../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <!-- Menu de navigation avec icônes -->
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="geographie.html">
+                                <img class="page0_ul_li_img" src="../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="plan.html">
+                                <img class="page0_ul_li_img" src="../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees/remontees.html">
+                                <img class="page0_ul_li_img" src="../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="meteo.html">
+                                <img class="page0_ul_li_img" src="../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="webcam.html">
+                                <img class="page0_ul_li_img" src="../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="meteo_intro">
+                        <h1>La météo</h1>
+                        <p>
+                            Retrouvez ici les prévisions météo du domaine skiable des Gets.
+                        </p>
+
+                        <p class="meteo_date" id="meteo-date">
+                            --/--/---- - --h--
+                        </p>
+                    </section>
+
+                    <!-- Conteneur principale -->
+                    <section class="meteo_container">
+                        <!-- Conteneur n°1 -->
+                        <section class="meteo_container_section1">
+
+                            <!-- Titre du conteneur n°1 -->
+                            <section class="meteo_container_section1_titre">
+                                <h3>Météo dans le village - 1167 mètres</h3>
+                            </section>
+
+                            <!-- Informations météo du conteneur n°1 -->
+                            <section class="meteo_container_section1_meteo">
+                                <h4 class="meteo_bloc_titre">MÉTÉO</h4>
+                                
+                                <div class="meteo_bloc_contenu">
+                                    <!-- Colonne pour la météo du matin -->
+                                    <div class="meteo_colonne">
+                                        <span class="meteo_moment">Matin</span>
+                                        <span class="meteo_etat" id="matin-etat-village">Météo API</span>
+                                        <span class="meteo_temp" id="matin-temp-village">X °C</span>
+                                    </div>
+
+                                    <!-- Séparateur vertical -->
+                                    <div class="meteo_separateur"></div>
+
+                                    <!-- Colonne pour la météo de l'après-midi -->
+                                    <div class="meteo_colonne">
+                                        <span class="meteo_moment">Après-midi</span>
+                                        <span class="meteo_etat" id="apres-midi-etat-village">Météo API</span>
+                                        <span class="meteo_temp" id="apres-midi-temp-village">X °C</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Informations d'enneigement du conteneur n°1 -->
+                            <section class="meteo_container_section1_enneigement">
+                                <h4 class="enneigement_bloc_titre">ENNEIGEMENT</h4>
+
+                                <div class="enneigement_bloc_contenu">
+                                    <span class="enneigement_hauteur_label">Hauteur</span>
+                                    <span class="enneigement_hauteur_valeur" id="hauteur-neige-village">X cm</span>
+                                </div>
+                            </section>
+
+                            <!-- Risque d'avalanche du conteneur n°1 -->
+                            <section class="meteo_container_section1_avalanche">
+                                <h4 class="avalanche_bloc_titre">RISQUE D'AVALANCHE</h4>
+
+                                <div class="avalanche_bloc_contenu">
+                                    <span class="avalanche_valeur" id="risque-avalanche-village">X / 5</span>
+                                    <img class="avalanche_image" id="image-avalanche-village" src="" alt="Risque d'avalanche">
+                                </div>
+                            </section>
+                        </section>
+
+                        <!-- Conteneur n°2 -->
+                        <section class="meteo_container_section2">
+
+                            <!-- Titre du conteneur n°2 -->
+                            <section class="meteo_container_section2_titre">
+                                <h3>Météo au sommet de la station - 1826 mètres</h3>
+                            </section>
+
+                            <!-- Informations météo du conteneur n°2 -->
+                            <section class="meteo_container_section2_meteo">
+                                <h4 class="meteo_bloc_titre">MÉTÉO</h4>
+
+                                <div class="meteo_bloc_contenu">
+                                    <!-- Colonne pour la météo du matin -->
+                                    <div class="meteo_colonne">
+                                        <span class="meteo_moment">Matin</span>
+                                        <span class="meteo_etat" id="matin-etat-sommet">Météo API</span>
+                                        <span class="meteo_temp" id="matin-temp-sommet">X °C</span>
+                                    </div>
+
+                                    <!-- Séparateur vertical -->
+                                    <div class="meteo_separateur"></div>
+
+                                    <!-- Colonne pour la météo de l'après-midi -->
+                                    <div class="meteo_colonne">
+                                        <span class="meteo_moment">Après-midi</span>
+                                        <span class="meteo_etat" id="apres-midi-etat-sommet">Météo API</span>
+                                        <span class="meteo_temp" id="apres-midi-temp-sommet">X °C</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Informations d'enneigements du conteneur n°2 -->
+                            <section class="meteo_container_section2_enneigement">
+                                <h4 class="enneigement_bloc_titre">ENNEIGEMENT</h4>
+
+                                <div class="enneigement_bloc_contenu">
+                                    <span class="enneigement_hauteur_label">Hauteur</span>
+                                    <span class="enneigement_hauteur_valeur" id="hauteur-neige-sommet">X cm</span>
+                                </div>
+                            </section>
+
+                            <!-- Risque d'avalanche du conteneur n°2 -->
+                            <section class="meteo_container_section2_avalanche">
+                                <h4 class="avalanche_bloc_titre">RISQUE D'AVALANCHE</h4>
+
+                                <div class="avalanche_bloc_contenu">
+                                    <span class="avalanche_valeur" id="risque-avalanche-sommet">X / 5</span>
+                                    <img class="avalanche_image" id="image-avalanche-sommet" src="" alt="Risque d'avalanche">
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/meteo.js"></script>
+</body>
+
+</html>

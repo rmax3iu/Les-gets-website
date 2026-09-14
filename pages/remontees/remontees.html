@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les remontées mécaniques | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <!-- Menu de navigation avec icônes -->
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Les remontées mécaniques -->
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+                    <section class="page2_intro">
+                        <h1>Les remontées mécaniques</h1>
+                        <p>
+                            Retrouvez ici l'ensemble des appareils du domaine skiable des Gets,
+                            avec leur année de construction et leur constructeur.
+                        </p>
+                    </section>
+
+                    <!-- Les télésièges à pinces débrayables -->
+                    <section class="page2_grandTitre">
+                        <h2>Les télésièges à pinces débrayables</h2>
+                    </section>
+
+
+                    <section class="page2_tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom de l'appareil</th>
+                                    <th>Année de construction</th>
+                                    <th>Constructeur</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="grainsOrExpress.html">TSD6 - Télésiège des Grains d'Or Express</a>
+                                    </td>
+                                    <td>2002</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TSD-GRAINS-D'OR-EXPRESS">Aucune donnée</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="chavanneExpress.html">TSD6 - Télésiège des Chavannes Express</a>
+                                    </td>
+                                    <td>2003</td>
+                                    <td>Leitner</td>
+                                    <td class="ouverture-remontee" data-remontee="TSD-CHAVANNES-EXPRESS">Aucune donnée</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="nauchetExpress.html">TSD6 - Télésiège des Nauchets Express</a>
+                                    </td>
+                                    <td>2002</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TSD-NAUCHETS-EXPRESS">Aucune donnée</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="perriereExpress.html">TSD6 - Télésiège des Perrières Express</a>
+                                    </td>
+                                    <td>2003</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TSD-PERRIERES-EXPRESS">Aucune donnée</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="ranfoillyExpress.html">TSD6 - Télésiège du Ranfoilly Express</a>
+                                    </td>
+                                    <td>2017</td>
+                                    <td>Leitner</td>
+                                    <td class="ouverture-remontee" data-remontee="TSD-RANFOILLY-EXPRESS">Aucune donnée</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="rostaExpress.html">TSD8 - Télésiège de la Rosta Express</a>
+                                    </td>
+                                    <td>2025</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-ROSTA">Aucune donnée</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <!-- Les télésièges à pinces fixes -->
+                    <section class="page2_grandTitre">
+                        <h2>Les télésièges à pinces fixes</h2>
+                    </section>
+
+                    <section class="page2_tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom de l'appareil</th>
+                                    <th>Année de construction</th>
+                                    <th>Constructeur</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="cheryNord.html">TSF4 - Télésiège du Chéry Nord</a>
+                                    </td>
+                                    <td>1986</td>
+                                    <td>Skirail</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-CHERY-NORD">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="laCroix.html">TSF4 - Télésiège de la Croix</a>
+                                    </td>
+                                    <td>2000</td>
+                                    <td>Skirail</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-CROIX">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="lesFolliets.html">TSF4 - Télésiège des Folliets</a>
+                                    </td>
+                                    <td>1998</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-FOLLIETS-DU-GOLF">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="grandeOurs.html">TSF2 - Télésiège de la Grande Ourse</a>
+                                    </td>
+                                    <td>1980</td>
+                                    <td>Montaz Mautino</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-GRANDE-OURSE">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="lesPlaneys.html">TSF2 - Télésiège des Planeys</a>
+                                    </td>
+                                    <td>1982</td>
+                                    <td>Montaz Mautino</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-PLANEYS">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="laPointe.html">TSF4 - Télésiège de la Pointe</a>
+                                    </td>
+                                    <td>1984</td>
+                                    <td>Skirail</td>
+                                    <td class="ouverture-remontee" data-remontee="TS-POINTE">Aucune donnée</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <!-- Les télécabines -->
+                    <section class="page2_grandTitre">
+                        <h2>Les télécabines</h2>
+                    </section>
+
+                    <section class="page2_tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom de l'appareil</th>
+                                    <th>Année de construction</th>
+                                    <th>Constructeur</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="telecabineChavannes.html">TCD6 - Télécabine des Chavannes</a>
+                                    </td>
+                                    <td>2010</td>
+                                    <td>Poma</td>
+                                    <td class="ouverture-remontee" data-remontee="TC-CHAVANNES">Aucune donnée</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="montChery.html">TCD6 - Télécabine du Mont Chéry</a>
+                                    </td>
+                                    <td>1980</td>
+                                    <td>Montaz Mautino</td>
+                                    <td class="ouverture-remontee" data-remontee="TC-CHERY">Aucune donnée</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <!-- Localisation géographique des différentes remontées mécaniques -->
+                    <section class="page2_grandTitre">
+                        <h2>Localisation géographique des différentes remontées mécaniques</h2>
+                    </section>
+
+                    <section class="page2_carte">
+                        <div id="map"></div>
+                        <figcaption>
+                            Localisation géographique des principales remontées mécaniques du domaine skiable des Gets
+                        </figcaption>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/remontees.js"></script>
+    <script src="../../js/carteGlobalRemontees.js"></script>
+
+</body>
+</html>

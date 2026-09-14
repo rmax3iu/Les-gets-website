@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSD6 Chavannes Express | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/chavanneExpress.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="chavannes_intro">
+                        <h1>TSD6 - Le télésiège des Chavannes Express</h1>
+                    </section>
+
+                    <section class="chavannes_zoneGeneral">
+
+                        <div class="chavannes_zoneGeneral_intro">
+                            <h2>Les Gets, station familiale des Portes du Soleil</h2>
+                            <p>
+                                Le village des Gets est situé en Haute-Savoie, entre les vallées du Giffre et d'Aulps, à
+                                1100 mètres d'altitude. Installée au cœur du domaine des Portes du Soleil, entre le Léman
+                                et le Mont-Blanc, la station a conservé son caractère de village de montagne, avec son
+                                architecture de pierre et de bois. Son domaine skiable se déploie sur deux versants
+                                aménagés : le Mont Chéry au nord et les Chavannes au sud.
+                            </p>
+                            <p>
+                                Le domaine de Morzine-Les Gets est intégré à l'espace des Portes du Soleil, qui réunit
+                                12 stations françaises et suisses entre 900 et 2277 mètres d'altitude, pour un total de
+                                650 kilomètres de pistes.
+                            </p>
+                            <p>
+                                Le télésiège débrayable 6 places des Chavannes Express constitue la porte d'entrée
+                                principale vers les pistes d'altitude du secteur des Chavannes.
+                            </p>
+                        </div>
+
+                        <section class="chavannes_zoneCarte">
+                            <div class="chavannes_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège des Chavannes Express
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="chavannes_zonePresentation">
+
+                            <div class="chavannes_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image1.png" alt="Vue de la gare aval du télésiège des Chavannes Express">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège des Chavannes Express
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie2">
+
+                                <div class="chavannes_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Le ski débute aux Gets en 1937 avec l'ouverture du téléski Boule de Gomme sur le
+                                        front de neige des Chavannes, toujours en service aujourd'hui. L'aménagement se
+                                        poursuit ensuite en altitude, au lieu-dit les Chavannes, avec la construction de
+                                        trois téléskis entre 1945 et 1962. L'accès à ce secteur est assuré dès le début
+                                        des années 1950 par un téléski à enrouleurs, exploité l'été sous forme de télésiège
+                                        fixe monoplace.
+                                    </p>
+                                    <p>
+                                        De nouveaux téléskis suivent dans les années 1960-1970 pour desservir les secteurs
+                                        voisins, puis le téléski saisonnier est doublé en 1973 par une télécabine 4 places
+                                        Poma. En 1976, un télésiège fixe 2 places remplace un des téléskis du plateau,
+                                        prolongé vers l'amont pour mieux relier le secteur Nauchets-Ranfoilly-Rosta.
+                                    </p>
+                                    <p>
+                                        La première version débrayable de l'appareil, un télésiège 4 places, voit le jour
+                                        en 1988, remplaçant l'ancien téléski saisonnier et prolongé jusqu'à la gare amont
+                                        du télésiège fixe de la Croix des Chavannes. En 2000, le secteur débutant du haut
+                                        plateau est modernisé avec un nouveau télésiège fixe 4 places.
+                                    </p>
+                                    <p>
+                                        Entre 2002 et 2004, la station engage une restructuration complète de ses
+                                        remontées mécaniques structurantes : les télésièges débrayables des Nauchets et
+                                        des Grains d'Or en 2002, celui des Perrières en 2004, et en 2003 la version
+                                        actuelle du Chavannes Express, un débrayable 6 places qui remplace la version
+                                        4 places de 1988 devenue insuffisante en débit.
+                                    </p>
+                                </div>
+
+                                <div class="chavannes_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="chavannes_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image2.png" alt="Carte de localisation du télésiège des Chavannes Express">
+                                        <figcaption>
+                                            Localisation géographique du télésiège des Chavannes Express
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="chavannes_zonePresentation_partie2_sp3">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        La gare aval est installée directement sur le front de neige principal des Gets,
+                                        à quelques minutes à pied du centre du village. Bien que doublé sur sa première
+                                        moitié par la télécabine des Chavannes, ce télésiège débrayable reste privilégié
+                                        par la majorité des skieurs pour gagner rapidement, sans déchausser, les secteurs
+                                        de Ranfoilly-Rosta ainsi que la liaison vers Morzine.
+                                    </p>
+                                    <p>
+                                        En parallèle de ce rôle d'ascenseur vers l'altitude, l'appareil dessert plusieurs
+                                        longues pistes bleues appréciées des écoles de ski et des débutants, ce qui en
+                                        fait la colonne vertébrale du secteur des Chavannes.
+                                    </p>
+                                    <p>
+                                        Depuis la gare amont, la piste bleue Gentianes ramène vers le front de neige des
+                                        Gets en desservant la gare aval du télésiège fixe de la Croix ; la piste bleue
+                                        Bruyère fait de même par un tracé plus long via le télésiège fixe des Folliets du
+                                        Golf ; la piste bleue Violette relie le secteur Ranfoilly-Rosta ; la piste rouge
+                                        Belle Mouille donne accès au domaine de Morzine. Deux pistes vertes thématiques,
+                                        Les Indiens et Les Trappeurs, sont également accessibles pour les plus jeunes.
+                                    </p>
+                                    <p>
+                                        Le télésiège débrayable 6 places des Chavannes Express a été construit par Leitner
+                                        et mis en service en décembre 2003, pour le compte de la Sagets. Exploité à une
+                                        vitesse maximale de 5 m/s, il assure un débit théorique de 3000 personnes par
+                                        heure grâce à ses 139 sièges, espacés de 36 mètres et cadencés toutes les 7,2
+                                        secondes.
+                                    </p>
+                                    <p>
+                                        La gare amont, motrice, développe une puissance de 820 kW répartie sur deux
+                                        moteurs, complétée par un moteur de secours de 309 kW. La tension est assurée en
+                                        aval par un vérin hydraulique. La ligne, longue de 2425 mètres pour un dénivelé de
+                                        450 mètres, s'élève de 1168 à 1618 mètres d'altitude, avec une pente moyenne de
+                                        18 % et une pente maximale de 49 %. Elle est portée par 20 pylônes et se parcourt
+                                        en environ 8 minutes.
+                                    </p>
+
+                                    <h2>Gare aval</h2>
+                                    <p>
+                                        Implantée à 1168 mètres d'altitude sur le front de neige principal, juste à côté de
+                                        celle de la télécabine des Chavannes, la gare aval adopte une couverture intégrale
+                                        blanche à liseré bleu, avec le nom de l'appareil et les logos des Gets et des Portes
+                                        du Soleil apposés sur les côtés. L'embarquement s'effectue à 90°, dans le contour de
+                                        la gare. Un rail de service est installé sur le côté, à proximité de la cabane de
+                                        l'opérateur.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image3.png" alt="Vue de la gare aval vue de profil">
+                                <figcaption>
+                                    Vue de la gare aval vue de profil
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie4">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image4.png" alt="Vue de la gare aval et développement de la ligne">
+                                <figcaption>
+                                    Vue de la gare aval et développement de la ligne
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image5.png" alt="Image des lanceurs des sièges en gare et pylône 1">
+                                <figcaption>
+                                    Image des lanceurs des sièges en gare et pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie6">
+                                <h2>Ligne</h2>
+                                <p>
+                                    Au sortir de la gare aval, la ligne prend rapidement de la hauteur pour survoler la
+                                    piste de retour Gentianes, avec une pente soutenue jusqu'au pylône 4. Elle traverse
+                                    ensuite une section plus plane jusqu'au pylône support-compression 7, qui marque le
+                                    début d'une nouvelle série de portées plus marquées. Au-delà du pylône 13, la ligne
+                                    survole le plateau des Chavannes avec une pente régulière jusqu'en gare amont,
+                                    enjambant à plusieurs reprises la piste bleue Gentianes par de longues portées.
+                                </p>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image6.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image7.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image8.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image9.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image10.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image11.png" alt="Image du pylône 7 de compression">
+                                <figcaption>
+                                    Image du pylône 7 de compression
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image12.png" alt="Image du pylône 8 de compression">
+                                <figcaption>
+                                    Image du pylône 8 de compression
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image13.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image14.png" alt="Image du pylône 10 de compression">
+                                <figcaption>
+                                    Image du pylône 10 de compression
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image15.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image16.png" alt="Image du pylône 12">
+                                <figcaption>
+                                    Image du pylône 12
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image17.png" alt="Image du pylône 13">
+                                <figcaption>
+                                    Image du pylône 13
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image18.png" alt="Image du pylône 14">
+                                <figcaption>
+                                    Image du pylône 14
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie20">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image19.png" alt="Image du pylône 15">
+                                <figcaption>
+                                    Image du pylône 15
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image20.png" alt="Image du pylône 16">
+                                <figcaption>
+                                    Image du pylône 16
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie22">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image21.png" alt="Image du pylône 17">
+                                <figcaption>
+                                    Image du pylône 17
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie23">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image22.png" alt="Image du pylône 18">
+                                <figcaption>
+                                    Image du pylône 18
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie24">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image23.png" alt="Image du pylône 19">
+                                <figcaption>
+                                    Image du pylône 19
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie25">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image24.png" alt="Image du pylône 20">
+                                <figcaption>
+                                    Image du pylône 20
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie26">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    Située à 1618 mètres d'altitude sur le haut du plateau des Chavannes, à proximité de
+                                    la gare amont du télésiège fixe de la Croix, la gare amont reprend la même couverture
+                                    intégrale et le même schéma de couleurs que la gare aval. Le débarquement s'effectue
+                                    dans le sens de la ligne, avant le contour. Un rail de stockage est disposé sur le
+                                    côté, comme en aval.
+                                </p>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie27">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image25.png" alt="Vue sur la zone de débarquement de la gare aval">
+                                <figcaption>
+                                    Vue sur la zone de débarquement de la gare aval
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie28">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image26.png" alt="Vue de la gare aval de côté">
+                                <figcaption>
+                                    Vue de la gare aval de côté
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie29">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image27.png" alt="Vue de la gare aval sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare aval sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie30">
+                                <h2>Sièges et pinces</h2>
+                                <p>
+                                    Les 139 sièges de l'appareil sont équipés de la pince à ressorts LA-612, développée
+                                    par Leitner. Les assises et dossiers sont rembourrés pour un meilleur confort tout au
+                                    long du trajet, qui dure un peu plus de 8 minutes.
+                                </p>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie31">
+                                <img src="../../images/remontees/telesiege/debrayable/chavanneExpress/image28.png" alt="Vue de la ligne depuis le plateau des Chavannes">
+                                <figcaption>
+                                    Vue de la ligne depuis le plateau des Chavannes
+                                </figcaption>
+                            </div>
+
+                            <div class="chavannes_zonePresentation_partie32">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Construit par Leitner en 2003, le télésiège des Chavannes Express a permis à la
+                                    Sagets de renforcer la porte d'entrée principale du secteur des Chavannes, avec un
+                                    confort accru et un débit revu à la hausse. Il s'inscrit dans la seconde étape de
+                                    modernisation des remontées structurantes du domaine skiable des Gets, marquée par la
+                                    construction de quatre télésièges débrayables en seulement trois ans.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/chavanneExpress.js"></script>
+
+</body>
+</html>

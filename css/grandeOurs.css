@@ -1,0 +1,213 @@
+/* ################################################################################################################################################## */
+/* ############################################ - Page sur le télésiège de la Grande Ourse - ######################################################### */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.ourse_intro
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.ourse_intro h1
+{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+}
+
+/* ################################################################################################# */
+/* ###################################### - Conteneurs généraux - ################################## */
+/* ################################################################################################# */
+
+.ourse_zonePresentation
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.ourse_zoneGeneral_intro,
+.ourse_zonePresentation_partie2,
+.ourse_zonePresentation_partie4,
+.ourse_zonePresentation_partie14,
+.ourse_zonePresentation_partie16,
+.ourse_zonePresentation_partie18
+{
+    align-self: stretch;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    background-color:#dee4ef;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 100px 0;
+    text-align:justify;
+}
+
+.ourse_zoneGeneral_intro h2,
+.ourse_zonePresentation_partie2 h2,
+.ourse_zonePresentation_partie4 h2,
+.ourse_zonePresentation_partie14 h2,
+.ourse_zonePresentation_partie16 h2,
+.ourse_zonePresentation_partie18 h2
+{
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.ourse_zoneGeneral_intro p,
+.ourse_zonePresentation_partie2 p,
+.ourse_zonePresentation_partie4 p,
+.ourse_zonePresentation_partie14 p,
+.ourse_zonePresentation_partie16 p,
+.ourse_zonePresentation_partie18 p
+{
+    margin-top:-1px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.ourse_zonePresentation_partie18
+{
+    margin-bottom: 30px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur carte interactive - ######################### */
+/* ################################################################################################# */
+
+.ourse_zoneCarte
+{
+    display:flex;
+    justify-content:center;
+    margin: 41px;
+}
+
+.ourse_carte
+{
+    width:80%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#map
+{
+    width:100%;
+    height:500px;
+    border-radius:20px 20px 0 0;
+}
+
+.ourse_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Blocs images - ####################################### */
+/* ################################################################################################# */
+
+.ourse_zonePresentation_partie1,
+.ourse_zonePresentation_partie3,
+.ourse_zonePresentation_partie5,
+.ourse_zonePresentation_partie6,
+.ourse_zonePresentation_partie7,
+.ourse_zonePresentation_partie8,
+.ourse_zonePresentation_partie9,
+.ourse_zonePresentation_partie10,
+.ourse_zonePresentation_partie11,
+.ourse_zonePresentation_partie12,
+.ourse_zonePresentation_partie13,
+.ourse_zonePresentation_partie15,
+.ourse_zonePresentation_partie17
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+}
+
+.ourse_zonePresentation_partie1 img,
+.ourse_zonePresentation_partie3 img,
+.ourse_zonePresentation_partie5 img,
+.ourse_zonePresentation_partie6 img,
+.ourse_zonePresentation_partie7 img,
+.ourse_zonePresentation_partie8 img,
+.ourse_zonePresentation_partie9 img,
+.ourse_zonePresentation_partie10 img,
+.ourse_zonePresentation_partie11 img,
+.ourse_zonePresentation_partie12 img,
+.ourse_zonePresentation_partie13 img,
+.ourse_zonePresentation_partie15 img,
+.ourse_zonePresentation_partie17 img
+{
+    border-radius:20px 20px 0 0;
+}
+
+.ourse_zonePresentation_partie1 figcaption,
+.ourse_zonePresentation_partie3 figcaption,
+.ourse_zonePresentation_partie5 figcaption,
+.ourse_zonePresentation_partie6 figcaption,
+.ourse_zonePresentation_partie7 figcaption,
+.ourse_zonePresentation_partie8 figcaption,
+.ourse_zonePresentation_partie9 figcaption,
+.ourse_zonePresentation_partie10 figcaption,
+.ourse_zonePresentation_partie11 figcaption,
+.ourse_zonePresentation_partie12 figcaption,
+.ourse_zonePresentation_partie13 figcaption,
+.ourse_zonePresentation_partie15 figcaption,
+.ourse_zonePresentation_partie17 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ################################ - Carte localisation géographique - ############################ */
+/* ################################################################################################# */
+
+.ourse_zonePresentation_partie2_sp2_sp2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin: 20px auto;
+    width:58%;
+}
+
+.ourse_zonePresentation_partie2_sp2_sp2 img
+{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+
+.ourse_zonePresentation_partie2_sp2_sp2 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+/* ################################################################################################# */

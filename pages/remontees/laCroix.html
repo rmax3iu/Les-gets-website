@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSF4 de la Croix | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/laCroix.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="croix_intro">
+                        <h1>TSF4 - Le télésiège de la Croix</h1>
+                    </section>
+
+                    <section class="croix_zoneGeneral">
+
+                        <div class="croix_zoneGeneral_intro">
+                            <h2>Les Gets et le plateau des Chavannes</h2>
+                            <p>
+                                Les Gets est un village de Haute-Savoie installé au col du même nom, entre la vallée du Giffre
+                                et la Dranse de Morzine. Son nom vient du patois désignant un couloir de descente du bois,
+                                matériau resté central dans l'architecture des chalets du village. La station de ski naît en
+                                1936 avec l'ouverture de son premier téléski, et s'adresse aujourd'hui encore à une clientèle
+                                attachée au patrimoine et aux paysages traditionnels de montagne. Reliée aux Portes du Soleil,
+                                elle partage son domaine avec Morzine, à l'exception du secteur du Mont Chéry.
+                            </p>
+                            <p>
+                                Le télésiège de la Croix est implanté sur le plateau des Chavannes, à la sortie de la
+                                télécabine. Il permet de rejoindre rapidement le domaine d'altitude et constitue une
+                                alternative appréciée en cas de forte affluence en bas de la station.
+                            </p>
+                        </div>
+
+                        <section class="croix_zoneCarte">
+                            <div class="croix_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège de la Croix
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="croix_zonePresentation">
+
+                            <div class="croix_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image1.png" alt="Vue de la gare aval du télésiège de la Croix">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Croix
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie2">
+
+                                <div class="croix_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Construit par Skirail en 2000, le télésiège de la Croix a remplacé le téléski des Ebauds
+                                        ainsi que l'ancien télésiège 2 places de la Croix des Chavannes, dont les sièges étaient
+                                        en bois. La gare amont, qui abrite la partie motrice, se trouve à proximité de celle du
+                                        télésiège des Chavannes Express.
+                                    </p>
+                                    <p>
+                                        L'appareil dessert trois pistes bleues : Gentiane, qui redescend directement vers la
+                                        station, Bruyère, qui rejoint le télésiège des Folliets du Golf et permet de gagner
+                                        Morzine, et Violette, qui amène vers les secteurs Ranfoilly et Rosta. Il donne également
+                                        accès à un mini border-cross ainsi qu'à la piste rouge Belle Mouille, en direction des
+                                        secteurs de Nyon et Chamossière côté Morzine.
+                                    </p>
+                                    <p>
+                                        Fréquenté avant tout par des skieurs recherchant des pistes bleues faciles, ce télésiège
+                                        offre aussi une bonne alternative pour rejoindre le domaine d'altitude : l'enchaînement
+                                        de la télécabine des Chavannes puis du télésiège de la Croix mène au même endroit que le
+                                        télésiège des Chavannes Express.
+                                    </p>
+                                </div>
+
+                                <div class="croix_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="croix_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/fixe/laCroix/image2.png" alt="Carte de localisation du télésiège de la Croix">
+                                        <figcaption>
+                                            Localisation géographique du télésiège de la Croix
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="croix_zonePresentation_partie2_sp3">
+                                    <h2>Infrastructures</h2>
+                                    <p>
+                                        Le télésiège de la Croix est un télésiège à attaches fixes 4 places, construit par Skirail
+                                        et mis en service en 2000. Il fonctionne en saison hivernale, avec une capacité de 2400
+                                        personnes par heure à une vitesse d'exploitation de 2,2 m/s, pour un temps de trajet
+                                        d'environ 5 minutes et 40 secondes.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1484 mètres d'altitude et la gare amont à 1614 mètres, soit un
+                                        dénivelé de 130 mètres pour une longueur développée de 747 mètres. La pente moyenne est
+                                        de 17,69 % et la pente maximale atteint 44,7 %.
+                                    </p>
+                                    <p>
+                                        La montée s'effectue par la droite. La gare motrice est installée en amont, tandis que
+                                        la tension du câble est assurée en aval. La ligne compte 8 pylônes, numérotés de 2 à 9,
+                                        et l'installation dispose de 109 sièges.
+                                    </p>
+
+                                    <h2>La gare aval</h2>
+                                    <p>
+                                        La gare aval assure la tension de l'installation. Elle est implantée sur le plateau des
+                                        Chavannes, directement à la sortie de la télécabine, ce qui en fait un point de passage
+                                        privilégié pour rejoindre le domaine d'altitude.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="croix_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image3.png" alt="Vue de la gare aval du télésiège de la Croix sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Croix sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie4">
+                                <h2>Ligne</h2>
+                                <p>
+                                    La ligne du télésiège de la Croix développe 747 mètres pour un dénivelé de 130 mètres, avec
+                                    une pente moyenne de 17,69 % et une pente maximale de 44,7 %. Elle est portée par 8 pylônes,
+                                    numérotés de 2 à 9.
+                                </p>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image4.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image5.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image6.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image7.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image8.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image9.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image10.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image11.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie13">
+                                <h2>La gare amont</h2>
+                                <p>
+                                    La gare amont, de type motrice, se situe à proximité immédiate de celle du télésiège des
+                                    Chavannes Express, sur le plateau des Chavannes.
+                                </p>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image12.png" alt="Vue de la gare amont du télésiège de la Croix">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège de la Croix
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image13.png" alt="Vue de la gare amont du télésiège de la Croix sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège de la Croix sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie16">
+                                <h2>Photos diverses</h2>
+                                <p>
+                                    Cette section regroupe quelques photographies supplémentaires du télésiège de la Croix,
+                                    entre détail des sièges et vue d'ensemble de la ligne.
+                                </p>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/fixe/laCroix/image14.png" alt="Vue d'ensemble de la ligne du télésiège de la Croix">
+                                <figcaption>
+                                    Vue d'ensemble de la ligne du télésiège de la Croix avec vue sur le télésiège des Chavannes
+                                </figcaption>
+                            </div>
+
+                            <div class="croix_zonePresentation_partie18">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Mis en service en 2000 par Skirail, le télésiège de la Croix reste aujourd'hui un appareil
+                                    clé du plateau des Chavannes, à la fois pour desservir des pistes bleues accessibles à tous
+                                    et pour fluidifier la circulation vers le domaine d'altitude en période de forte affluence.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/laCroix.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSD8 Rosta | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/rostaExpress.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="rosta_intro">
+                        <h1>TSD8 - Le télésiège de la Rosta</h1>
+                    </section>
+
+                    <section class="rosta_zoneGeneral">
+
+                        <div class="rosta_zoneGeneral_intro">
+                            <h2>Les Gets et le secteur des Chavannes</h2>
+                            <p>
+                                Située en Haute-Savoie au cœur du domaine des Portes du Soleil, la station des Gets conserve
+                                l'identité d'un village de montagne tout en proposant un domaine skiable moderne adapté à tous
+                                les niveaux. Reliée aux autres stations françaises et suisses des Portes du Soleil, elle bénéficie
+                                d'un vaste terrain de ski évoluant entre le Léman et le Mont-Blanc.
+                            </p>
+                            <p>
+                                Les Gets est une station-village située à 1172 mètres d'altitude dans le Chablais français.
+                                Elle fait partie intégrante du domaine skiable des Portes du Soleil, qui regroupe 12 stations
+                                reliées entre la France et la Suisse. Le domaine des Gets-Morzine s'étend sur deux versants :
+                                celui des Chavannes et celui du Mont Chéry.
+                            </p>
+                            <p>
+                                Le secteur des Chavannes propose des pistes adaptées à tous les niveaux et permet notamment
+                                de rejoindre la station de Morzine. Le secteur de la Rosta, situé sur ce versant, constitue
+                                une zone importante du domaine grâce à la diversité de ses pistes et à ses nombreuses liaisons.
+                            </p>
+                        </div>
+
+                        <section class="rosta_zoneCarte">
+                            <div class="rosta_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège de la Rosta
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="rosta_zonePresentation">
+
+                            <div class="rosta_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image1.png" alt="Vue de la gare aval du télésiège de la Rosta">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Rosta
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie2">
+
+                                <div class="rosta_zonePresentation_partie2_sp1">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        Le télésiège de la Rosta est situé sur le massif des Chavannes, dans le secteur Rosta-Perrières.
+                                        Il prend place à proximité immédiate du télésiège des Grains d'Or et permet d'accéder à plusieurs
+                                        pistes du secteur. Sa position lui permet également de participer aux liaisons entre les différentes
+                                        zones du domaine skiable des Gets.
+                                    </p>
+                                    <p>
+                                        Le nouveau télésiège remplace l'ancien télésiège fixe quatre places construit par Skirail en 1992.
+                                        Cette modernisation permet d'augmenter considérablement la capacité de transport du secteur et
+                                        d'améliorer les conditions de circulation des skieurs.
+                                    </p>
+                                </div>
+
+                                <div class="rosta_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="rosta_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image2.png" alt="Carte de localisation du télésiège de la Rosta">
+                                        <figcaption>
+                                            Localisation géographique du télésiège de la Rosta
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="rosta_zonePresentation_partie2_sp3">
+                                    <h2>Historique</h2>
+                                    <p>
+                                        Le secteur de la Rosta est fréquenté depuis de nombreuses années et possède une grande diversité
+                                        de pistes, allant des pistes bleues accessibles aux débutants jusqu'à des pistes noires plus techniques.
+                                    </p>
+                                    <p>
+                                        La première génération du télésiège de la Rosta est construite en 1972. Il s'agit alors d'un télésiège
+                                        fixe deux places construit par Poma. Après vingt années d'exploitation, cette remontée est remplacée
+                                        en 1992 par un nouveau télésiège fixe quatre places construit par Skirail.
+                                    </p>
+                                    <p>
+                                        Avec l'augmentation progressive de la fréquentation du secteur, la capacité du télésiège devient
+                                        insuffisante. En 2025, les Gets décident donc de remplacer l'ancien appareil par un nouveau télésiège
+                                        débrayable huit places de grande capacité. La construction du nouveau télésiège s'est déroulée sur une période d'environ six mois, entre juillet
+                                        et décembre 2025. Le nouvel appareil est ouvert au public le 20 décembre 2025.
+                                    </p>
+
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Les travaux du nouveau télésiège de la Rosta ont débuté durant l'été 2025 avec le démontage de
+                                        l'ancien télésiège fixe quatre places. La construction du nouvel appareil s'est ensuite poursuivie
+                                        pendant plusieurs mois afin de permettre son ouverture pour la saison hivernale 2025-2026.
+                                    </p>
+                                    <p>
+                                        Le chantier a notamment nécessité la réalisation des différents massifs destinés à accueillir les
+                                        pylônes ainsi que le montage des deux gares. La nouvelle installation a été construite par Poma
+                                        et appartient techniquement à la gamme Multix.
+                                    </p>
+                                    <p>
+                                        Les nouvelles gares sont équipées de couvertures LIFE, apportant une architecture moderne tout en
+                                        améliorant la protection des équipements. Une partie du garage des sièges est intégrée directement
+                                        à la gare aval tandis qu'un bâtiment annexe permet de stocker une partie supplémentaire des véhicules.
+                                    </p>
+
+                                    <!-- Carrousel photos du chantier -->
+                                    <div class="rosta_zonePresentation_partie2_sp3_sp1">
+                                        <div class="rosta_zonePresentation_partie2_sp3_image">
+
+                                            <div class="rosta_zonePresentation_partie2_sp3_sp1_sp1" id="fleche_gauche">
+                                                <img src="../../images/icone/fleche/fleche1_droite_sf.png" alt="Flèche gauche">
+                                            </div>
+
+                                            <div class="rosta_zonePresentation_partie2_sp3_sp1_sp2">
+                                                <img id="carousel_image" src="../../images/remontees/telesiege/debrayable/rostaExpress/construction/image1.png" alt="Photo du chantier à venir">
+                                            </div>
+
+                                            <div class="rosta_zonePresentation_partie2_sp3_sp1_sp3" id="fleche_droite">
+                                                <img src="../../images/icone/fleche/fleche1_gauche_sf.png" alt="Flèche droite">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rosta_zonePresentation_partie2_sp3_description" id="carousel_description">
+                                            Image des fondations en gare aval
+                                        </div>
+                                    </div>
+
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Le télésiège de la Rosta est un télésiège débrayable huit places construit par Poma et exploité par
+                                        SoleGets. Il a été mis en service en 2025 et ouvert au public le 20 décembre de la même année. La remontée dispose d'une capacité de huit personnes par siège et d'un débit de 3640 personnes par
+                                        heure, extensible jusqu'à 4200 personnes par heure. Sa vitesse maximale d'exploitation atteint 6 m/s.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1397 mètres d'altitude tandis que la gare amont atteint 1668 mètres.
+                                        La ligne possède une longueur inclinée de 847 mètres et une pente maximale de 76,5 %. La motorisation Direct Drive est située en gare amont et la mise en tension est réalisée en gare aval.
+                                        La ligne comporte 10 pylônes et le télésiège dispose initialement de 41 sièges, avec une possibilité
+                                        d'extension jusqu'à 50 véhicules lorsque le garage définitif sera construit.
+                                    </p>
+
+                                    <h2>La gare aval</h2>
+                                    <p>
+                                        La gare aval du télésiège de la Rosta est située directement à côté du télésiège des Grains d'Or.
+                                        Cette proximité est toutefois temporaire puisque le Grains d'Or doit être démonté en 2026.
+                                    </p>
+                                    <p>
+                                        Le nouveau télésiège de la Rosta a été dimensionné pour reprendre une partie des flux auparavant
+                                        répartis entre les deux appareils. Le remplacement permet ainsi de regrouper la capacité de transport
+                                        de l'ancien télésiège de la Rosta et du Grains d'Or.
+                                    </p>
+                                    <p>
+                                        Un nouveau garage doit être construit à l'emplacement de l'ancienne gare aval du Grains d'Or.
+                                        Il permettra d'augmenter le nombre de sièges disponibles, faisant passer la capacité de stockage
+                                        de 41 à 50 véhicules.
+                                    </p>
+                                    <p>
+                                        La gare aval est équipée d'un contour permettant la décélération et l'embarquement des skieurs.
+                                        Une partie des sièges peut être stockée directement dans les voies de la gare, tandis que les autres
+                                        véhicules sont rangés dans le bâtiment de garage.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image3.png" alt="Image du télésiège de la Rosta depuis les pistes">
+                                <figcaption>
+                                    Image de la gare aval vue de profil
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie4">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image4.png" alt="Image de la gare aval vue depuis le bas de la piste">
+                                <figcaption>
+                                    Image de la gare aval vue depuis le bas de la piste
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image5.png" alt="Image de la gare aval vue en contre plongée">
+                                <figcaption>
+                                    Image de la gare aval vue en contre plongée
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie6">
+                                <h2>Ligne</h2>
+                                <p>
+                                    Le nouveau télésiège fonctionne à une vitesse maximale de 6 m/s, ce qui est particulièrement rapide
+                                    pour une installation de cette longueur. Le trajet complet dure un peu plus de deux minutes, contre
+                                    environ dix minutes avec l'ancien appareil. La ligne est composée de 10 pylônes et présente une pente maximale de 76,5 %. Elle permet de rejoindre
+                                    rapidement la partie supérieure du secteur Rosta et offre une liaison efficace vers les différentes
+                                    pistes du domaine. Plusieurs portées successives permettent à la ligne de franchir le relief du secteur. Le pylône 7
+                                    constitue notamment le seul pylône mixte de la ligne.
+                                </p>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image6.png" alt="Image des lanceurs des sièges en gare">
+                                <figcaption>
+                                    Image des lanceurs des sièges en gare
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image7.png" alt="Image des pylônes 1 et 2">
+                                <figcaption>
+                                    Image des pylônes 1 et 2
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image8.png" alt="Image de la tête du pylône 3">
+                                <figcaption>
+                                    Image de la tête du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image9.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image10.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image11.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image12.png" alt="Image de la tête du pylône mixte 7">
+                                <figcaption>
+                                    Image de la tête du pylône mixte 7
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image13.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image14.png" alt="Image des pylônes 9 et 10">
+                                <figcaption>
+                                    Image des pylônes 9 et 10
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie16">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont est située à 1668 mètres d'altitude. Elle accueille la motorisation Direct Drive qui
+                                    permet d'entraîner directement le câble du télésiège. La gare possède une couverture LIFE caractéristique de la nouvelle génération d'installations Poma.
+                                    Elle comprend également la cabine de l'opérateur et les différents équipements nécessaires à
+                                    l'exploitation et à la maintenance du télésiège.
+                                </p>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image15.png" alt="Image de la gare amont du télésiège de la Rosta">
+                                <figcaption>
+                                    Image de la gare amont du télésiège de la Rosta
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image16.png" alt="Image de la gare amont du télésiège de la Rosta vue latéralement">
+                                <figcaption>
+                                    Image de la gare amont du télésiège de la Rosta vue latéralement
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image17.png" alt="Image de la gare amont du télésiège de la Rosta vue en contre plongée">
+                                <figcaption>
+                                    Image de la gare amont du télésiège de la Rosta vue en contre plongée
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie20">
+                                <h2>Véhicules</h2>
+                                <p>
+                                    Le télésiège de la Rosta est initialement équipé de 41 sièges LPA-OCC pouvant accueillir huit personnes.
+                                    Chaque siège possède un design bicolore bleu et noir et est équipé d'une barre de sécurité adaptée
+                                    au transport de huit skieurs. Les véhicules sont équipés de pinces débrayables LPA. Leur espacement est adapté à l'exploitation
+                                    de l'installation afin de permettre d'atteindre le débit prévu par le constructeur. Une fois le nouveau garage construit, des sièges supplémentaires pourront être ajoutés afin de porter
+                                    le nombre total de véhicules à 50.
+                                </p>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image18.png" alt="Image d'un siège LPA-OCC vu en ligne">
+                                <figcaption>
+                                    Image d'un siège LPA-OCC vu en ligne
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie22">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image19.png" alt="Image d'un siège LPA-OCC vu en gare">
+                                <figcaption>
+                                    Image d'un siège LPA-OCC vu en gare
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie23">
+                                <h2>Photos depuis les pistes</h2>
+                                <p>
+                                    Plusieurs vues permettent d'observer le télésiège depuis les pistes du secteur. La piste Yéti longe
+                                    notamment une partie de la remontée et offre différents points de vue sur la ligne et ses pylônes.
+                                </p>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie24">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image20.png" alt="Première image de la ligne vu depuis la piste noire Yéti">
+                                <figcaption>
+                                    Première image de la ligne vu depuis la piste noire Yéti
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie25">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image21.png" alt="Deuxième image de la ligne vu depuis la piste noire Yéti">
+                                <figcaption>
+                                    Deuxième image de la ligne vu depuis la piste noire Yéti
+                                </figcaption>
+                            </div>
+                            <div class="rosta_zonePresentation_partie26">
+                                <img src="../../images/remontees/telesiege/debrayable/rostaExpress/image22.png" alt="Troisième image de la ligne vu depuis la piste noire Yéti">
+                                <figcaption>
+                                    Troisième image de la ligne vu depuis la piste noire Yéti
+                                </figcaption>
+                            </div>
+
+                            <div class="rosta_zonePresentation_partie27">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Le nouveau télésiège de la Rosta constitue une amélioration importante par rapport à l'ancien appareil.
+                                    Grâce à sa capacité de huit places, son débit élevé et sa vitesse maximale de 6 m/s, il permet de
+                                    réduire considérablement le temps de montée et d'améliorer la circulation des skieurs dans le secteur.
+                                </p>
+                                <p>
+                                    Cette nouvelle remontée constitue également une pièce importante dans la modernisation du secteur
+                                    Rosta-Perrières. Elle permet d'anticiper la disparition du Grains d'Or et de proposer une installation
+                                    moderne, rapide et adaptée à la fréquentation actuelle du domaine skiable des Gets.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/rostaExpress.js"></script>
+
+</body>
+</html>

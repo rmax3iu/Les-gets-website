@@ -1,0 +1,228 @@
+/* ################################################################################################################################################## */
+/* #################################################### - Page sur la télécabine du Mont Chéry - ##################################################### */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.chery_intro
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.chery_intro h1
+{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+}
+
+/* ################################################################################################# */
+/* ###################################### - Conteneurs généraux - ################################## */
+/* ################################################################################################# */
+
+.chery_zonePresentation
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.chery_zoneGeneral_intro,
+.chery_zonePresentation_partie2,
+.chery_zonePresentation_partie7,
+.chery_zonePresentation_partie18,
+.chery_zonePresentation_partie21,
+.chery_zonePresentation_partie23
+{
+    align-self: stretch;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    background-color:#dee4ef;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 100px 0;
+    text-align:justify;
+}
+
+.chery_zoneGeneral_intro h2,
+.chery_zonePresentation_partie2 h2,
+.chery_zonePresentation_partie7 h2,
+.chery_zonePresentation_partie18 h2,
+.chery_zonePresentation_partie21 h2,
+.chery_zonePresentation_partie23 h2
+{
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.chery_zoneGeneral_intro p,
+.chery_zonePresentation_partie2 p,
+.chery_zonePresentation_partie7 p,
+.chery_zonePresentation_partie18 p,
+.chery_zonePresentation_partie21 p,
+.chery_zonePresentation_partie23 p
+{
+    margin-top:-1px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.chery_zonePresentation_partie23
+{
+    margin-bottom: 30px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur carte interactive - ######################### */
+/* ################################################################################################# */
+
+.chery_zoneCarte
+{
+    display:flex;
+    justify-content:center;
+    margin: 41px;
+}
+
+.chery_carte
+{
+    width:80%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#map
+{
+    width:100%;
+    height:500px;
+    border-radius:20px 20px 0 0;
+}
+
+.chery_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+/* ################################################################################################# */
+/* ################################ - Carte localisation géographique - ############################ */
+/* ################################################################################################# */
+
+.chery_zonePresentation_partie2_sp2_sp1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #50719f;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 58%;
+}
+
+.chery_zonePresentation_partie2_sp2_sp1 img
+{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+
+.chery_zonePresentation_partie2_sp2_sp1 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Blocs images - ####################################### */
+/* ################################################################################################# */
+
+.chery_zonePresentation_partie1,
+.chery_zonePresentation_partie3,
+.chery_zonePresentation_partie4,
+.chery_zonePresentation_partie5,
+.chery_zonePresentation_partie6,
+.chery_zonePresentation_partie8,
+.chery_zonePresentation_partie9,
+.chery_zonePresentation_partie10,
+.chery_zonePresentation_partie11,
+.chery_zonePresentation_partie12,
+.chery_zonePresentation_partie13,
+.chery_zonePresentation_partie14,
+.chery_zonePresentation_partie15,
+.chery_zonePresentation_partie16,
+.chery_zonePresentation_partie17,
+.chery_zonePresentation_partie19,
+.chery_zonePresentation_partie20,
+.chery_zonePresentation_partie22
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+}
+
+.chery_zonePresentation_partie1 img,
+.chery_zonePresentation_partie3 img,
+.chery_zonePresentation_partie4 img,
+.chery_zonePresentation_partie5 img,
+.chery_zonePresentation_partie6 img,
+.chery_zonePresentation_partie8 img,
+.chery_zonePresentation_partie9 img,
+.chery_zonePresentation_partie10 img,
+.chery_zonePresentation_partie11 img,
+.chery_zonePresentation_partie12 img,
+.chery_zonePresentation_partie13 img,
+.chery_zonePresentation_partie14 img,
+.chery_zonePresentation_partie15 img,
+.chery_zonePresentation_partie16 img,
+.chery_zonePresentation_partie17 img,
+.chery_zonePresentation_partie19 img,
+.chery_zonePresentation_partie20 img,
+.chery_zonePresentation_partie22 img
+{
+    border-radius:20px 20px 0 0;
+}
+
+.chery_zonePresentation_partie1 figcaption,
+.chery_zonePresentation_partie3 figcaption,
+.chery_zonePresentation_partie4 figcaption,
+.chery_zonePresentation_partie5 figcaption,
+.chery_zonePresentation_partie6 figcaption,
+.chery_zonePresentation_partie8 figcaption,
+.chery_zonePresentation_partie9 figcaption,
+.chery_zonePresentation_partie10 figcaption,
+.chery_zonePresentation_partie11 figcaption,
+.chery_zonePresentation_partie12 figcaption,
+.chery_zonePresentation_partie13 figcaption,
+.chery_zonePresentation_partie14 figcaption,
+.chery_zonePresentation_partie15 figcaption,
+.chery_zonePresentation_partie16 figcaption,
+.chery_zonePresentation_partie17 figcaption,
+.chery_zonePresentation_partie19 figcaption,
+.chery_zonePresentation_partie20 figcaption,
+.chery_zonePresentation_partie22 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+/* ################################################################################################# */

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSF4 de la Pointe | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../../css/laPointe.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="pointe_intro">
+                        <h1>TSF4 - Le télésiège de la Pointe</h1>
+                    </section>
+
+                    <section class="pointe_zoneGeneral">
+
+                        <div class="pointe_zoneGeneral_intro">
+                            <h2>Les Gets et le secteur du Mont Chéry</h2>
+                            <p>
+                                Les Gets est une station du domaine skiable des Portes du Soleil, en Haute-Savoie, qui
+                                propose du ski depuis la fin des années 1930 avec la construction du téléski Boule de
+                                Gomme en 1936. Le domaine s'étend aujourd'hui de part et d'autre du village, entre 1100
+                                et 1800 mètres d'altitude. D'un côté se trouve le secteur isolé et peu fréquenté du Mont
+                                Chéry, réputé pour ses panoramas ; de l'autre, les secteurs des Chavannes et des
+                                Perrières, qui permettent de rejoindre Morzine et le reste des Portes du Soleil.
+                            </p>
+                            <p>
+                                Considéré comme l'un des derniers secteurs tranquilles du domaine, le Mont Chéry reste
+                                accessible depuis 1952, année de mise en service d'un premier télésiège biplace,
+                                remplacé plus tard par un télésiège à attaches fixes desservant approximativement
+                                l'actuelle gare amont du téléski de Super Chéry. Le tracé de l'actuel télésiège de la
+                                Pointe correspondait à l'origine à deux téléskis distincts, construits dans les années
+                                1960 : Super Chéry et Pointe de Chéry, tous deux toujours en service aujourd'hui comme
+                                itinéraires alternatifs par temps venteux.
+                            </p>
+                            <p>
+                                Dans les années 1980, un vaste programme de modernisation transforme la quasi-totalité
+                                des remontées du Mont Chéry. Un projet de liaison avec la station voisine de Praz de Lys
+                                est envisagé à l'époque mais n'aboutit jamais. Après 40 ans sans nouveaux travaux
+                                majeurs, un nouveau réaménagement du secteur est aujourd'hui engagé, avec notamment le
+                                déplacement du télésiège des Grains d'Or vers le Mont Chéry pour remplacer les
+                                remontées du front de neige, suivi du remplacement de la télécabine principale prévu
+                                pour 2028.
+                            </p>
+                        </div>
+
+                        <section class="pointe_zoneCarte">
+                            <div class="pointe_carte">
+                                <div id="map"></div>
+                                <figcaption>
+                                    Localisation géographique du télésiège de la Pointe
+                                </figcaption>
+                            </div>
+                        </section>
+
+                        <section class="pointe_zonePresentation">
+
+                            <div class="pointe_zonePresentation_partie1">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image1.png" alt="Vue de la gare aval du télésiège de la Pointe">
+                                <figcaption>
+                                    Vue de la gare aval du télésiège de la Pointe
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie2">
+
+                                <div class="pointe_zonePresentation_partie2_sp1">
+                                    <h2>Histoire du secteur</h2>
+                                    <p>
+                                        Le télésiège de la Pointe fait partie du programme de modernisation des années
+                                        1980. Construit par Skirail en 1984, il a été le premier télésiège 4 places
+                                        installé aux Gets. Il donne accès au sommet du Mont Chéry, à 1800 mètres
+                                        d'altitude, et aux nombreuses pistes du secteur. En été, il transporte
+                                        également des randonneurs jusqu'au sommet pour profiter du panorama. Après 42
+                                        ans de service, l'appareil doit effectuer ses derniers tours durant la saison
+                                        2025-2026, avant démantèlement.
+                                    </p>
+                                </div>
+
+                                <div class="pointe_zonePresentation_partie2_sp2">
+                                    <h2>Localisation géographique</h2>
+                                    <div class="pointe_zonePresentation_partie2_sp2_sp2">
+                                        <img src="../../images/remontees/telesiege/fixe/laPointe/image2.png" alt="Carte de localisation du télésiège de la Pointe">
+                                        <figcaption>
+                                            Localisation géographique du télésiège de la Pointe
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <div class="pointe_zonePresentation_partie2_sp3">
+                                    <h2>Situation</h2>
+                                    <p>
+                                        La gare aval du télésiège de la Pointe se situe à côté de la gare amont de la
+                                        télécabine du Mont Chéry et de la gare aval du téléski de Super Chéry. L'appareil
+                                        dessert le sommet du secteur, point culminant du domaine skiable du Mont Chéry,
+                                        et sa ligne longe sur sa seconde moitié le téléski de la Pointe de Chéry.
+                                    </p>
+                                </div>
+
+                                <div class="pointe_zonePresentation_partie2_sp4">
+                                    <h2>Caractéristiques</h2>
+                                    <p>
+                                        Le télésiège de la Pointe est un télésiège à attaches fixes 4 places, construit
+                                        par Skirail et mis en service en 1984. Il offre une capacité de 1972 personnes
+                                        par heure à une vitesse d'exploitation de 2,3 m/s.
+                                    </p>
+                                    <p>
+                                        La gare aval se situe à 1520 mètres d'altitude et la gare amont à 1805 mètres,
+                                        soit un dénivelé de 285 mètres pour une longueur inclinée de 979 mètres, avec
+                                        une pente maximale de 62 %.
+                                    </p>
+                                    <p>
+                                        L'entraînement et la tension sont tous deux assurés en gare aval, de type
+                                        Tripode. La montée s'effectue par la droite. La ligne compte 13 pylônes (les
+                                        pylônes 1 et 2 étant reliés à la gare de départ), et l'installation dispose de
+                                        117 sièges standard Skirail 4 places.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image3.png" alt="Vue des gares aval du secteur, télécabine du Mont Chéry, télésiège de la Pointe et téléski de Super Chéry">
+                                <figcaption>
+                                    Vue des gares aval du secteur : télécabine du Mont Chéry, télésiège de la Pointe et téléski de Super Chéry
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie4">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image4.png" alt="Panneau d'informations du télésiège de la Pointe">
+                                <figcaption>
+                                    Panneau d'informations du télésiège de la Pointe
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image5.png" alt="Zone d'embarquement du télésiège de la Pointe, avec le pylône 1 relié à la gare Tripode">
+                                <figcaption>
+                                    Zone d'embarquement, avec le pylône 1 relié à la gare Tripode
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie6">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image6.png" alt="Image du pylône 1">
+                                <figcaption>
+                                    Image du pylône 1
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image7.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image8.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image9.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image10.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image11.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image12.png" alt="Image du pylône 7">
+                                <figcaption>
+                                    Image du pylône 7
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image13.png" alt="Image du pylône 8, à proximité du téléski de la Pointe de Chéry">
+                                <figcaption>
+                                    Image du pylône 8, à proximité du téléski de la Pointe de Chéry
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image14.png" alt="Image du pylône 9">
+                                <figcaption>
+                                    Image du pylône 9
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image15.png" alt="Image du pylône 10">
+                                <figcaption>
+                                    Image du pylône 10
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image16.png" alt="Image du pylône 11">
+                                <figcaption>
+                                    Image du pylône 11
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie17">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image17.png" alt="Image du pylône 12">
+                                <figcaption>
+                                    Image du pylône 12
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image18.png" alt="Image du pylône 13">
+                                <figcaption>
+                                    Image du pylône 13
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie19">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont du télésiège de la Pointe fonctionne sur un système de poulie de
+                                    retour fixe. Elle est implantée à proximité des gares amont des télésièges du Chéry
+                                    Nord et du téléski de la Pointe de Chéry, au sommet du secteur, offrant un large
+                                    panorama sur les massifs environnants, dont le Mont-Blanc.
+                                </p>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie20">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image19.png" alt="Vue de la gare amont du télésiège de la Pointe">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège de la Pointe
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image20.png" alt="Vue de la gare amont du télésiège de la Pointe sous un autre angle">
+                                <figcaption>
+                                    Vue de la gare amont du télésiège de la Pointe sous un autre angle
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie22">
+                                <h2>Sièges et ligne</h2>
+                                <p>
+                                    L'installation est équipée de 117 sièges standard Skirail 4 places, au design
+                                    bicolore bleu et noir ajouté en 2024. Le dossier n'étant pas rembourré, le confort
+                                    reste sommaire comparé aux appareils plus récents du domaine.
+                                </p>
+                                <p>
+                                    La ligne, longue de 979 mètres, mène jusqu'à la gare amont, point culminant du
+                                    secteur du Mont Chéry. Sa seconde moitié longe le tracé du téléski de la Pointe de
+                                    Chéry, à partir du pylône 8.
+                                </p>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie23">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image21.png" alt="Siège du télésiège de la Pointe en ligne">
+                                <figcaption>
+                                    Siège du télésiège de la Pointe en ligne
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie24">
+                                <img src="../../images/remontees/telesiege/fixe/laPointe/image22.png" alt="Vue d'ensemble de la ligne du télésiège de la Pointe">
+                                <figcaption>
+                                    Vue d'ensemble de la ligne du télésiège de la Pointe
+                                </figcaption>
+                            </div>
+
+                            <div class="pointe_zonePresentation_partie25">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Après 42 ans de service, le télésiège de la Pointe doit être mis hors service en
+                                    2026. Ce remplacement s'inscrit dans un projet plus large de revitalisation du
+                                    secteur du Mont Chéry, visant à moderniser l'ensemble des remontées mécaniques de
+                                    ce versant historique du domaine skiable des Gets.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/laPointe.js"></script>
+
+</body>
+</html>

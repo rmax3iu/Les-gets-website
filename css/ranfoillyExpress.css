@@ -1,0 +1,327 @@
+/* ################################################################################################################################################## */
+/* ############################################# - Page sur le télésiège Ranfoilly Express - ######################################################## */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.ranfoilly_intro
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.ranfoilly_intro h1
+{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+}
+
+/* ################################################################################################# */
+/* ###################################### - Conteneurs généraux - ################################## */
+/* ################################################################################################# */
+
+.ranfoilly_zonePresentation
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.ranfoilly_zoneGeneral_intro,
+.ranfoilly_zonePresentation_partie2,
+.ranfoilly_zonePresentation_partie4,
+.ranfoilly_zonePresentation_partie21,
+.ranfoilly_zonePresentation_partie25,
+.ranfoilly_zonePresentation_partie28
+{
+    display:flex;
+    flex-direction:column;
+    background-color:#dee4ef;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 100px 0;
+    text-align:justify;
+}
+
+.ranfoilly_zoneGeneral_intro h2,
+.ranfoilly_zonePresentation_partie2 h2,
+.ranfoilly_zonePresentation_partie4 h2,
+.ranfoilly_zonePresentation_partie21 h2,
+.ranfoilly_zonePresentation_partie25 h2,
+.ranfoilly_zonePresentation_partie28 h2
+{
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.ranfoilly_zoneGeneral_intro p,
+.ranfoilly_zonePresentation_partie2 p,
+.ranfoilly_zonePresentation_partie4 p,
+.ranfoilly_zonePresentation_partie21 p,
+.ranfoilly_zonePresentation_partie25 p,
+.ranfoilly_zonePresentation_partie28 p
+{
+    margin-top:-1px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur carte interactive - ######################### */
+/* ################################################################################################# */
+
+.ranfoilly_zoneCarte
+{
+    display:flex;
+    justify-content:center;
+    margin: 41px;
+}
+
+.ranfoilly_carte
+{
+    width:80%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#map
+{
+    width:100%;
+    height:500px;
+    border-radius:20px 20px 0 0;
+}
+
+.ranfoilly_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Blocs images - ####################################### */
+/* ################################################################################################# */
+
+.ranfoilly_zonePresentation_partie1,
+.ranfoilly_zonePresentation_partie3,
+.ranfoilly_zonePresentation_partie5,
+.ranfoilly_zonePresentation_partie6,
+.ranfoilly_zonePresentation_partie7,
+.ranfoilly_zonePresentation_partie8,
+.ranfoilly_zonePresentation_partie9,
+.ranfoilly_zonePresentation_partie10,
+.ranfoilly_zonePresentation_partie11,
+.ranfoilly_zonePresentation_partie12,
+.ranfoilly_zonePresentation_partie13,
+.ranfoilly_zonePresentation_partie14,
+.ranfoilly_zonePresentation_partie15,
+.ranfoilly_zonePresentation_partie16,
+.ranfoilly_zonePresentation_partie17,
+.ranfoilly_zonePresentation_partie18,
+.ranfoilly_zonePresentation_partie19,
+.ranfoilly_zonePresentation_partie20,
+.ranfoilly_zonePresentation_partie22,
+.ranfoilly_zonePresentation_partie23,
+.ranfoilly_zonePresentation_partie24,
+.ranfoilly_zonePresentation_partie26,
+.ranfoilly_zonePresentation_partie27
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+}
+
+.ranfoilly_zonePresentation_partie1 img,
+.ranfoilly_zonePresentation_partie3 img,
+.ranfoilly_zonePresentation_partie5 img,
+.ranfoilly_zonePresentation_partie6 img,
+.ranfoilly_zonePresentation_partie7 img,
+.ranfoilly_zonePresentation_partie8 img,
+.ranfoilly_zonePresentation_partie9 img,
+.ranfoilly_zonePresentation_partie10 img,
+.ranfoilly_zonePresentation_partie11 img,
+.ranfoilly_zonePresentation_partie12 img,
+.ranfoilly_zonePresentation_partie13 img,
+.ranfoilly_zonePresentation_partie14 img,
+.ranfoilly_zonePresentation_partie15 img,
+.ranfoilly_zonePresentation_partie16 img,
+.ranfoilly_zonePresentation_partie17 img,
+.ranfoilly_zonePresentation_partie18 img,
+.ranfoilly_zonePresentation_partie19 img,
+.ranfoilly_zonePresentation_partie20 img,
+.ranfoilly_zonePresentation_partie22 img,
+.ranfoilly_zonePresentation_partie23 img,
+.ranfoilly_zonePresentation_partie24 img,
+.ranfoilly_zonePresentation_partie26 img,
+.ranfoilly_zonePresentation_partie27 img
+{
+    border-radius:20px 20px 0 0;
+}
+
+.ranfoilly_zonePresentation_partie1 figcaption,
+.ranfoilly_zonePresentation_partie3 figcaption,
+.ranfoilly_zonePresentation_partie5 figcaption,
+.ranfoilly_zonePresentation_partie6 figcaption,
+.ranfoilly_zonePresentation_partie7 figcaption,
+.ranfoilly_zonePresentation_partie8 figcaption,
+.ranfoilly_zonePresentation_partie9 figcaption,
+.ranfoilly_zonePresentation_partie10 figcaption,
+.ranfoilly_zonePresentation_partie11 figcaption,
+.ranfoilly_zonePresentation_partie12 figcaption,
+.ranfoilly_zonePresentation_partie13 figcaption,
+.ranfoilly_zonePresentation_partie14 figcaption,
+.ranfoilly_zonePresentation_partie15 figcaption,
+.ranfoilly_zonePresentation_partie16 figcaption,
+.ranfoilly_zonePresentation_partie17 figcaption,
+.ranfoilly_zonePresentation_partie18 figcaption,
+.ranfoilly_zonePresentation_partie19 figcaption,
+.ranfoilly_zonePresentation_partie20 figcaption,
+.ranfoilly_zonePresentation_partie22 figcaption,
+.ranfoilly_zonePresentation_partie23 figcaption,
+.ranfoilly_zonePresentation_partie24 figcaption,
+.ranfoilly_zonePresentation_partie26 figcaption,
+.ranfoilly_zonePresentation_partie27 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Partie centrale - ##################################### */
+/* ################################################################################################# */
+
+.ranfoilly_zonePresentation_partie2_sp2
+{
+    display:flex;
+    flex-direction:column;
+}
+
+/* ################################################################################################# */
+/* ################################ - Carte localisation géographique - ############################ */
+/* ################################################################################################# */
+
+.ranfoilly_zonePresentation_partie2_sp2_sp2
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-self:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+    width:58%;
+}
+
+.ranfoilly_zonePresentation_partie2_sp2_sp2 img
+{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+
+.ranfoilly_zonePresentation_partie2_sp2_sp2 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* #################################### - La section construction - ################################ */
+/* ################################################################################################# */
+
+.ranfoilly_zonePresentation_partie2_sp3_image
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_description
+{
+    background-color: #9ab3d4;
+    width: 60%;
+    margin-inline: auto;
+    border-radius:15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp1
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp1 img
+{
+    height: 78px;
+    margin-left:70px;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp2
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 76%;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp2 img
+{
+    height: 90%;
+    border-radius: 30px;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp3
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp3 img
+{
+    height: 78px;
+    margin-right:70px;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp1,
+.ranfoilly_zonePresentation_partie2_sp3_sp1_sp3
+{
+    cursor: pointer;
+}
+
+.ranfoilly_zonePresentation_partie2_sp3_sp1
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.ranfoilly_zonePresentation_partie28
+{
+    margin-bottom:32px;
+}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+/* ################################################################################################# */

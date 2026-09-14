@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSD6 Nauchets Express | Les Gets</title>
+
+    <link rel="icon" href="../../images/logo/logo1/logo1_sf.png" type="image/png">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../../css/nauchetExpress.css">
+</head>
+
+<body>
+
+    <div class="page0_positionVerticale1">
+        <div class="page0_positionHorizontale1">
+
+            <nav>
+
+                <div class="page0_nav1">
+                    <a href="../../index.html">
+                        <img class="page0_nav1_img1" src="../../images/logo/logo1/logo1_sf.png" alt="Logo des Gets">
+                    </a>
+                </div>
+
+                <div class="page0_nav2">
+                    <ul>
+
+                        <li>
+                            <a href="../geographie.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/localisation/localisation1_sf.png" alt="Localisation">
+                                <p class="page0_li_texte">La localisation géographique</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../plan.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/carte/carte1_sf.png" alt="Carte">
+                                <p class="page0_li_texte">Les anciens plans du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="remontees.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/telesiege/telesiege1_sf.png" alt="Icône télésiège">
+                                <p class="page0_li_texte">Les remontées mécaniques</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../meteo.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/flocon/flocon1_sf.png" alt="Météo">
+                                <p class="page0_li_texte">La météo</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../ouvertureDomaine.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/skieur/skieur1_sf.png" alt="Skieur">
+                                <p class="page0_li_texte">Le taux d'ouverture du domaine skiable</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../webcam.html">
+                                <img class="page0_ul_li_img" src="../../images/icone/webcam/webcam1_sf.png" alt="Webcam">
+                                <p class="page0_li_texte">Les webcams</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="page0_positionVerticale2">
+
+                    <section class="nauchet_intro">
+                        <h1>TSD6 - Le télésiège des Nauchets Express</h1>
+                    </section>
+
+                    <section class="nauchet_zoneGeneral">
+
+                        <div class="nauchet_zoneGeneral_intro">
+
+                            <h2>Les Gets et le secteur des Chavannes</h2>
+
+                            <p>
+                                Située en Haute-Savoie au cœur du domaine des Portes du Soleil, la station des Gets
+                                conserve l’identité d’un village de montagne tout en proposant un domaine skiable
+                                moderne adapté à tous les niveaux. Reliée aux autres stations françaises et suisses
+                                des Portes du Soleil, elle bénéficie d’un vaste terrain de ski évoluant entre le
+                                Léman et le Mont-Blanc.
+                            </p>
+
+                            <p>
+                                Le télésiège débrayable des Nauchets Express se situe sur le versant des Chavannes,
+                                l’un des secteurs majeurs du domaine skiable des Gets. Ce secteur regroupe plusieurs
+                                remontées structurantes permettant d’assurer les liaisons entre les pistes d’altitude,
+                                le secteur de la Turche et les différents fronts de neige.
+                            </p>
+
+                            <p>
+                                Mis en service dans le cadre de la modernisation des axes structurants du domaine
+                                skiable, le Nauchets Express participe aujourd’hui à l’organisation des déplacements
+                                des skieurs sur le secteur Ranfoilly-Rosta et constitue un élément essentiel de la
+                                liaison entre Les Gets et Morzine.
+                            </p>
+
+                        </div>
+
+                        <section class="nauchet_zoneCarte">
+
+                            <div class="nauchet_carte">
+
+                                <div id="map"></div>
+
+                                <figcaption>
+                                    Localisation géographique du télésiège des Nauchets Express
+                                </figcaption>
+
+                            </div>
+
+                        </section>
+
+                        <section class="nauchet_zonePresentation">
+                            <div class="nauchet_zonePresentation_partie1">
+
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image1.png" 
+                                alt="Vue de la gare aval du télésiège des Nauchets Express">
+                                <figcaption>
+                                    Image de la gare aval du télésiège des Nauchets Express
+                                </figcaption>
+
+                            </div>
+
+
+                            <div class="nauchet_zonePresentation_partie2">
+                                <div class="nauchet_zonePresentation_partie2_sp1">
+
+                                    <h2>Histoire du Nauchets Express</h2>
+                                    <p>
+                                        Dans le cadre de la première étape de la réorganisation du secteur « Chavannes - Ranfoilly »,
+                                        la société d'exploitation Sagets SA décide de moderniser les axes structurants du domaine skiable.
+                                        Cette opération comprend notamment la réalisation des télésièges débrayables « Nauchets » et
+                                        « Grains d'Or », destinés à remplacer les anciennes installations et améliorer la circulation
+                                        des skieurs sur le secteur d'altitude.
+                                    </p>
+
+                                    <p>
+                                        Livré en 2002 par le constructeur français Pomagalski, le télésiège débrayable des Nauchets Express
+                                        appartient à la gamme Phoenix équipée de gares Satellit. Cette nouvelle remontée permet d'augmenter
+                                        considérablement le confort, le débit et la rapidité des déplacements sur le versant des Chavannes.
+                                    </p>
+
+
+                                    <h2>Rôle dans le domaine skiable</h2>
+                                    <p>
+                                        Le Nauchets Express occupe aujourd'hui une position stratégique dans l'organisation du domaine skiable
+                                        des Gets. Il assure une liaison essentielle entre le secteur Ranfoilly-Rosta et les différents espaces
+                                        skiables des Chavannes, tout en facilitant les connexions vers Morzine et le reste du domaine des
+                                        Portes du Soleil.
+                                    </p>
+
+
+                                    <h2>Pistes accessibles</h2>
+                                    <p>
+                                        Depuis la gare amont du Nauchets Express, les skieurs peuvent rejoindre plusieurs pistes du secteur
+                                        des Chavannes ainsi que les différentes liaisons permettant de poursuivre leur parcours vers les
+                                        autres secteurs du domaine skiable.
+                                    </p>
+
+                                </div>
+
+                                <div class="nauchet_zonePresentation_partie2_sp2">
+
+                                    <h2>Localisation géographique</h2>
+                                    <div class="nauchet_zonePresentation_partie2_sp2_sp2">
+
+                                        <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image2.png"
+                                        alt="Carte de la localisation du télésiège des Nauchets Express">
+
+                                        <figcaption>
+                                            Localisation géographique du télésiège des Nauchets Express
+                                        </figcaption>
+
+                                    </div>
+                                </div>
+
+                                <div class="nauchet_zonePresentation_partie2_sp3">
+
+                                    <h2>Infrastructures et ligne du télésiège débrayable</h2>
+                                    <p>
+                                        Pour la réalisation de la première étape de la réorganisation du secteur « Chavannes - Ranfoilly »,
+                                        comprenant la création des télésièges débrayables « Nauchets » et « Grains d'Or », la société
+                                        d'exploitation Sagets SA s'est associée au constructeur français Pomagalski. Livré en 2002, le
+                                        télésiège des Nauchets Express appartient à la gamme Phoenix, équipée de gares de type Satellit.
+                                        Cette conception modulaire permet une optimisation de la qualité, des coûts et des délais de
+                                        réalisation tout en facilitant les opérations de maintenance.
+                                    </p>
+                                    <p>
+                                        Le télésiège adopte une configuration classique avec une gare aval retour-tension et une gare amont
+                                        motrice. L'appareil est équipé d'un moteur à courant continu et la tension du câble est assurée par
+                                        un vérin hydraulique central. Exploité à une vitesse maximale de 5 m/s, il permet de transporter
+                                        jusqu'à 3 000 personnes par heure. Les sièges six places Doudouk6 sont associés aux pinces Omega T
+                                        et disposent d'assises ainsi que de dossiers rembourrés afin d'améliorer le confort des usagers.
+                                    </p>
+
+                                    <h2>La gare aval</h2>
+                                    <p>
+                                        La gare aval est située au niveau de la plaque tournante d'altitude du domaine skiable des Gets,
+                                        au pied des versants « Ranfoilly-Rosta ». Elle est implantée à proximité immédiate des gares aval
+                                        des télésièges débrayables « Ranfoilly » et « Grains d'Or », ainsi que des télésièges fixes
+                                        « Mouille au Chat » et « Rosta ». Cette position en fait un important point de correspondance
+                                        du domaine skiable.
+                                    </p>
+
+                                    <p>
+                                        La gare adopte une couverture intégrale de type mi-bois mi-tôle. La partie inférieure recouverte
+                                        de bois accueille les logos des Gets et des Portes du Soleil tandis que la partie métallique blanche
+                                        forme la couverture supérieure. L'embarquement est de type tangentiel, directement intégré dans le
+                                        contour de la gare.
+                                    </p>
+
+                                    <p>
+                                        À l'arrière de la gare aval, un court rail de service incurvé équipé d'une petite plateforme de
+                                        maintenance permet notamment le stockage de la nacelle de service utilisée pour les opérations
+                                        techniques.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie3">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image3.png"alt="Image de la gare aval avec le domaine skiable du Mont-Chery à l‘arrière">
+                                <figcaption>
+                                    Image de la gare aval avec le domaine skiable du Mont-Chery à l‘arrière
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie4">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image4.png"alt="Image de la gare aval et vue sur la zone d'attente">
+                                <figcaption>
+                                    Image de la gare aval et vue sur la zone d'attente
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie5">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image5.png"alt="Image des lanceurs des sièges en gare">
+                                <figcaption>
+                                    Image des lanceurs des sièges en gare 
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie6">
+                                <h2>Ligne</h2>
+                                <p>
+                                    Le Nauchets Express est un télésiège débrayable 6 places long de 973 mètres, offrant un dénivelé de 273 mètres. 
+                                    La ligne est équipée de dix pylônes, dont un pylône compression, un pylône support-compression et huit pylônes support. 
+                                    Son tracé présente une pente globalement régulière qui se renforce progressivement à l'approche de la gare amont. 
+                                    Au cours du trajet, les sièges franchissent plusieurs longues portées surplombant notamment les pistes Ambresalles et Violette, 
+                                    offrant un large panorama sur le secteur des Chavannes.
+                                </p>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie7">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image6.png" alt="Image de la gare aval et vue du pylône compression 1">
+                                <figcaption>
+                                    Image de la gare aval et vue du pylône compression 1
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie8">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image7.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image du pylône 2
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie9">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image8.png" alt="Image du pylône 2">
+                                <figcaption>
+                                    Image d'une longue portée entre le pylône 2 et 3
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie10">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image9.png" alt="Image du pylône 3">
+                                <figcaption>
+                                    Image du pylône 3
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie11">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image10.png" alt="Image du pylône 4">
+                                <figcaption>
+                                    Image du pylône 4
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie12">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image11.png" alt="Image du pylône 5">
+                                <figcaption>
+                                    Image du pylône 5
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie13">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image12.png" alt="Image du pylône 6">
+                                <figcaption>
+                                    Image du pylône 6
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie14">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image13.png" alt="Image du support-compression 7">
+                                <figcaption>
+                                    Image du pylône support-compression 7
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie15">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image14.png" alt="Image du pylône 8">
+                                <figcaption>
+                                    Image du pylône 8
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie16">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image15.png" alt="Image du pylône 9 et vue sur la gare amont">
+                                <figcaption>
+                                    Image du pylône 9 et vue sur la gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie17">
+                                <h2>Gare amont</h2>
+                                <p>
+                                    La gare amont est située au lieu-dit « Tête des Crêts » à une altitude de 1664 mètres, non loin de la poulie 
+                                    flottante retour-tension du téléski du même nom. Elle est équipée, comme la gare aval d’une couverture intégrale mi-bois, 
+                                    mi-tôle. Le schéma des couleurs est identique, à l’exception de l’absence des logos des Gets et des Portes du Soleil. 
+                                    La zone de débarquement est assurée dans le sens de la ligne. Un très court rail de service est installé dans le prolongement 
+                                    du brin montant. 
+                                </p>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie18">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image16.png" alt="Image de la gare amont">
+                                <figcaption>
+                                    Image de la gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie19">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image17.png" alt="Image de la gare amont">
+                                <figcaption>
+                                    Image de la gare amont
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie20">
+                                <h2>Photos diverses</h2>
+                                <p>
+                                    Cette section regroupe différentes photographies du télésiège des Nauchets Express,
+                                    notamment des détails des sièges, des éléments de la ligne ainsi que plusieurs vues
+                                    permettant d'observer les différentes infrastructures de la remontée mécanique.
+                                </p>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie21">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image18.png" alt="Image d'un siège Doudouk6">
+                                <figcaption>
+                                    Image d'un siège Doudouk6
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie22">
+                                <img src="../../images/remontees/telesiege/debrayable/nauchetExpress/image19.png" alt="Image de la ligne depuis la gare aval">
+                                <figcaption>
+                                    Image de la ligne depuis la gare aval
+                                </figcaption>
+                            </div>
+
+                            <div class="nauchet_zonePresentation_partie23">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    Avec la réalisation de cette première étape de modernisation des axes structurants du domaine skiable des Gets, 
+                                    la société d’exploitation Sagets a considérablement amélioré la gestion des flux des skieurs sur le secteur d’altitude 
+                                    « Ranfoilly-Rosta ». Confort, rapidité et sécurité sont les maîtres mots de cette première étape dans la réorganisation 
+                                    des axes majeurs du versant « Chavannes – Ranfoilly ».
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+
+            <div class="footer_contact_bloc">
+                <p class="footer_phrase">Site web et design réalisés par Peignier Maxime</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../../js/nauchetExpress.js"></script>
+
+</body>
+</html>

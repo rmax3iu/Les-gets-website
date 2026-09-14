@@ -1,0 +1,328 @@
+/* ################################################################################################################################################## */
+/* ############################################# - Page sur le télésiège de la Rosta - ############################################################## */
+/* ################################################################################################################################################## */
+
+/* ################################################################################################# */
+/* ############################################ - Introduction - ################################### */
+/* ################################################################################################# */
+
+.rosta_intro
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/paysage/paysage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.rosta_intro h1
+{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+}
+
+/* ################################################################################################# */
+/* ###################################### - Conteneurs généraux - ################################## */
+/* ################################################################################################# */
+
+.rosta_zonePresentation
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.rosta_zoneGeneral_intro,
+.rosta_zonePresentation_partie2,
+.rosta_zonePresentation_partie6,
+.rosta_zonePresentation_partie16,
+.rosta_zonePresentation_partie20,
+.rosta_zonePresentation_partie23,
+.rosta_zonePresentation_partie27
+{
+    display:flex;
+    flex-direction:column;
+    background-color:#dee4ef;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 100px 0;
+    text-align:justify;
+}
+
+.rosta_zoneGeneral_intro h2,
+.rosta_zonePresentation_partie2 h2,
+.rosta_zonePresentation_partie6 h2,
+.rosta_zonePresentation_partie16 h2,
+.rosta_zonePresentation_partie20 h2,
+.rosta_zonePresentation_partie23 h2,
+.rosta_zonePresentation_partie27 h2
+{
+    margin-top:10px;
+    margin-left:4px;
+}
+
+.rosta_zoneGeneral_intro p,
+.rosta_zonePresentation_partie2 p,
+.rosta_zonePresentation_partie6 p,
+.rosta_zonePresentation_partie16 p,
+.rosta_zonePresentation_partie20 p,
+.rosta_zonePresentation_partie23 p,
+.rosta_zonePresentation_partie27 p
+{
+    margin-top:-1px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Conteneur carte interactive - ######################### */
+/* ################################################################################################# */
+
+.rosta_zoneCarte
+{
+    display:flex;
+    justify-content:center;
+    margin: 41px;
+}
+
+.rosta_carte
+{
+    width:80%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#map
+{
+    width:100%;
+    height:500px;
+    border-radius:20px 20px 0 0;
+}
+
+.rosta_carte figcaption
+{
+    background-color:#789b67;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+}
+
+/* ################################################################################################# */
+/* ######################################## - Blocs images - ####################################### */
+/* ################################################################################################# */
+
+.rosta_zonePresentation_partie1,
+.rosta_zonePresentation_partie3,
+.rosta_zonePresentation_partie4,
+.rosta_zonePresentation_partie5,
+.rosta_zonePresentation_partie7,
+.rosta_zonePresentation_partie8,
+.rosta_zonePresentation_partie9,
+.rosta_zonePresentation_partie10,
+.rosta_zonePresentation_partie11,
+.rosta_zonePresentation_partie12,
+.rosta_zonePresentation_partie13,
+.rosta_zonePresentation_partie14,
+.rosta_zonePresentation_partie15,
+.rosta_zonePresentation_partie17,
+.rosta_zonePresentation_partie18,
+.rosta_zonePresentation_partie19,
+.rosta_zonePresentation_partie21,
+.rosta_zonePresentation_partie22,
+.rosta_zonePresentation_partie24,
+.rosta_zonePresentation_partie25,
+.rosta_zonePresentation_partie26
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+}
+
+.rosta_zonePresentation_partie1 img,
+.rosta_zonePresentation_partie3 img,
+.rosta_zonePresentation_partie4 img,
+.rosta_zonePresentation_partie5 img,
+.rosta_zonePresentation_partie7 img,
+.rosta_zonePresentation_partie8 img,
+.rosta_zonePresentation_partie9 img,
+.rosta_zonePresentation_partie10 img,
+.rosta_zonePresentation_partie11 img,
+.rosta_zonePresentation_partie12 img,
+.rosta_zonePresentation_partie13 img,
+.rosta_zonePresentation_partie14 img,
+.rosta_zonePresentation_partie15 img,
+.rosta_zonePresentation_partie17 img,
+.rosta_zonePresentation_partie18 img,
+.rosta_zonePresentation_partie19 img,
+.rosta_zonePresentation_partie21 img,
+.rosta_zonePresentation_partie22 img,
+.rosta_zonePresentation_partie24 img,
+.rosta_zonePresentation_partie25 img,
+.rosta_zonePresentation_partie26 img
+{
+    border-radius:20px 20px 0 0;
+}
+
+.rosta_zonePresentation_partie1 figcaption,
+.rosta_zonePresentation_partie3 figcaption,
+.rosta_zonePresentation_partie4 figcaption,
+.rosta_zonePresentation_partie5 figcaption,
+.rosta_zonePresentation_partie7 figcaption,
+.rosta_zonePresentation_partie8 figcaption,
+.rosta_zonePresentation_partie9 figcaption,
+.rosta_zonePresentation_partie10 figcaption,
+.rosta_zonePresentation_partie11 figcaption,
+.rosta_zonePresentation_partie12 figcaption,
+.rosta_zonePresentation_partie13 figcaption,
+.rosta_zonePresentation_partie14 figcaption,
+.rosta_zonePresentation_partie15 figcaption,
+.rosta_zonePresentation_partie17 figcaption,
+.rosta_zonePresentation_partie18 figcaption,
+.rosta_zonePresentation_partie19 figcaption,
+.rosta_zonePresentation_partie21 figcaption,
+.rosta_zonePresentation_partie22 figcaption,
+.rosta_zonePresentation_partie24 figcaption,
+.rosta_zonePresentation_partie25 figcaption,
+.rosta_zonePresentation_partie26 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* ####################################### - Partie centrale - ##################################### */
+/* ################################################################################################# */
+
+.rosta_zonePresentation_partie2_sp2
+{
+    display:flex;
+    flex-direction:column;
+}
+
+/* ################################################################################################# */
+/* ################################ - Carte localisation géographique - ############################ */
+/* ################################################################################################# */
+
+.rosta_zonePresentation_partie2_sp2_sp2
+{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-self:center;
+    align-items:center;
+    background-color:#50719f;
+    border-radius:20px;
+    margin:20px;
+    width:58%;
+}
+
+.rosta_zonePresentation_partie2_sp2_sp2 img
+{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+
+.rosta_zonePresentation_partie2_sp2_sp2 figcaption
+{
+    color:white;
+    margin:10px;
+}
+
+/* ################################################################################################# */
+/* #################################### - La section construction - ################################ */
+/* ################################################################################################# */
+
+.rosta_zonePresentation_partie2_sp3_image
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.rosta_zonePresentation_partie2_sp3_description
+{
+    background-color: #9ab3d4;
+    width: 60%;
+    margin-inline: auto;
+    border-radius:15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp1
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp1 img
+{
+    height: 78px;
+    margin-left:70px;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp2
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 76%;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp2 img
+{
+    width: 81%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 38px;
+    margin-top: 38px;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp3
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp3 img
+{
+    height: 78px;
+    margin-right:70px;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1_sp1,
+.rosta_zonePresentation_partie2_sp3_sp1_sp3
+{
+    cursor: pointer;
+}
+
+.rosta_zonePresentation_partie2_sp3_sp1
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.rosta_zonePresentation_partie27
+{
+    margin-bottom:40px;
+}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+/* ################################################################################################# */
