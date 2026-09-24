@@ -147,17 +147,25 @@ Le site est encore en cours de développement. Voici les principaux points resta
 </p>
 
 ```
-- Réaliser les reportages pour les téléskis et les tire-fesses.
-- Mettre en place le responsive design pour que le site s'adapte aux tablettes et aux téléphones.
-- Trouver un moyen de sécuriser les mots de passe utilisés dans le JavaScript afin de pouvoir rendre l'intégralité du
-  code source disponible.
+- Réaliser les reportages pour les téléskis.
+- Mettre en place le responsive design pour que le site s'adapte aux tablettes et aux
+téléphones.
+
+- Migrer la gestion des remontées mécaniques vers PHP couplé à une base de données MySQL 
+afin d'alléger le code HTML et de dynamiser l'affichage des tableaux.
+
+- Trouver un moyen de sécuriser les mots de passe utilisés dans le JavaScript afin de pouvoir
+rendre l'intégralité du code source disponible.
 
 - Finir la page sur le taux d'ouverture du domaine skiable.
-- Développer une page contact avec un formulaire envoyant un e-mail contenant le nom, le prénom et les
-  informations saisies.
+- Développer une page contact avec un formulaire envoyant un e-mail contenant le nom, le prénom
+et les informations saisies.
+
 - Améliorer le pied de page.
 
-- Mettre à jour les pages consacrées aux remontées mécaniques afin de prendre en compte les récentes suppressions et remplacements d'installations, notamment le télésiège de la Pointe, le télésiège de la Grande Ourse et le télésiège des Grains d'Or.
+- Mettre à jour les pages consacrées aux remontées mécaniques afin de prendre en compte
+les récentes suppressions et remplacements d'installations, notamment le télésiège de
+la Pointe, le télésiège de la Grande Ourse et le télésiège des Grains d'Or.
 ```
 
 <!-- |-------------------------------------------------------------------------------------------| -->
