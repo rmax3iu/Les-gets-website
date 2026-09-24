@@ -147,19 +147,25 @@ The site is still under development. Here are the main points that still need im
 </p>
 
 ```
-- Write reports for the T-bar and platter lifts.
-- Set up responsive design so the site adapts to tablets and phones.
-- Find a way to secure the passwords used in the JavaScript so the full source
-  code can be made public.
+- Create the reports for the drag lifts.
+- Implement responsive design so that the website adapts to tablets and
+  mobile phones.
 
-- Finish the ski area opening rate page.
-- Build a contact page with a form sending an email containing the name, first name
+- Migrate the management of the ski lifts to PHP combined with a MySQL database 
+  in order to reduce the HTML code and make the tables dynamically generated.
+
+- Find a way to secure the passwords used in JavaScript so that the entire
+  source code can be made publicly available.
+
+- Finish the page about the ski area's opening rate.
+- Develop a contact page with a form sending an email containing the first name, last name
   and the information entered.
+
 - Improve the footer.
 
-- Update the pages dedicated to ski lifts to reflect recent removals and replacements
-  of installations, notably the Pointe chairlift, the Grande Ourse chairlift and the
-  Grains d'Or chairlift.
+- Update the pages dedicated to the ski lifts to take into account
+  recent removals and replacements of installations, including the Pointe chairlift,
+  the Grande Ourse chairlift and the Grains d'Or chairlift.
 ```
 
 <!-- |-------------------------------------------------------------------------------------------| -->
